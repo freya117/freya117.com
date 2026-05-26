@@ -7,6 +7,9 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './content/**/*.mdx',
   ],
+  // Class-based dark mode so .dark on <html> activates both Chaoran's CSS vars
+  // (already keyed off .light/.dark in globals.css) AND Tailwind's dark: variants.
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {

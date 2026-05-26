@@ -88,7 +88,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="light" suppressHydrationWarning>
       <body
         className={`${FontInter.variable} ${FontFiraCode.variable} ${FontFraunces.variable} ${FontLibreCaslon.variable} ${FontSourceSerif.variable} font-sans flex flex-col min-h-screen relative`}
       >
