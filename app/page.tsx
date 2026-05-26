@@ -145,15 +145,15 @@ export default async function Page() {
             </h1>
             <br/>
             <h4 className="font-medium text-fore-subtle">
-              I'm an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">NYU</a>,
-              where I'll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">VIDA Center</a>,
-              advised by <a href="https://ctsilva.github.io/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Claudio Silva</a> and
-              co-advised by <a href="https://www.geosimulation.org/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Paul Torrens</a>.
+              I'm an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">NYU</a>,
+              where I'll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">VIDA Center</a>,
+              advised by <a href="https://ctsilva.github.io/" className="font-medium text-accent hover:text-accent-hover hover:underline">Claudio Silva</a> and
+              co-advised by <a href="https://www.geosimulation.org/" className="font-medium text-accent hover:text-accent-hover hover:underline">Paul Torrens</a>.
               <br/><br/>
               I work on <strong>vision-language models and spatial machine learning</strong> to help machines understand cities and the people in them.
               <br/><br/>
-              Previously, I completed a dual master's at MIT in EECS (<a href="https://www.csail.mit.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">CSAIL</a>,
-              advised by Randall Davis) and Urban Planning (<a href="https://cityform.mit.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">City Form Lab</a>,
+              Previously, I completed a dual master's at MIT in EECS (<a href="https://www.csail.mit.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">CSAIL</a>,
+              advised by Randall Davis) and Urban Planning (<a href="https://cityform.mit.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">City Form Lab</a>,
               advised by Andres Sevtsuk).
             </h4>
           </div>
@@ -163,7 +163,7 @@ export default async function Page() {
       <NewsSection />
 
       <div className="flex items-center mt-16 mb-8 space-x-3">
-        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent text-teal-600">
+        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
           PUBLICATION
         </span>
       </div>

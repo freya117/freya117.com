@@ -16,7 +16,7 @@ const newsItems = [
   },
   {
     date: '08/2025',
-    content: <>- 📃 Two co-authored papers accepted to the <a href='https://haips.com/' className="font-medium text-teal-600 dark:text-teal-600 hover:underline">HAIPS@CCS</a> workshop</>
+    content: <>- 📃 Two co-authored papers accepted to the <a href='https://haips.com/' className="font-medium text-accent hover:text-accent-hover hover:underline">HAIPS@CCS</a> workshop</>
   },
   {
     date: '07/2025',
@@ -36,7 +36,7 @@ const newsItems = [
   },
   {
     date: '10/2024',
-    content: <>- 🇩🇪 Worked as a research intern at the Max Planck Institute for Security and Privacy in Bochum, Germany, under the mentorship of <a href='https://mhaidli.github.io/' className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Abraham Mhaidli</a>.</>
+    content: <>- 🇩🇪 Worked as a research intern at the Max Planck Institute for Security and Privacy in Bochum, Germany, under the mentorship of <a href='https://mhaidli.github.io/' className="font-medium text-accent hover:text-accent-hover hover:underline">Abraham Mhaidli</a>.</>
   },
   {
     date: '08/2024',
@@ -48,7 +48,7 @@ const newsItems = [
   },
   {
     date: '04/2024',
-    content: <>- 🏅 Won the third prize of <a href='https://ethics.nd.edu/news-and-events/news/notre-dame-ibm-technology-ethics-lab-hosts-first-ever-hackathon/' className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Tech Ethics Hackathon</a></>
+    content: <>- 🏅 Won the third prize of <a href='https://ethics.nd.edu/news-and-events/news/notre-dame-ibm-technology-ethics-lab-hosts-first-ever-hackathon/' className="font-medium text-accent hover:text-accent-hover hover:underline">Tech Ethics Hackathon</a></>
   },
   {
     date: '05/2023',
@@ -60,7 +60,7 @@ const newsItems = [
   },
   {
     date: '10/2022',
-    content: <>- 🏅 Attended MobileHCI 2022 in Vancouver as a SV and presented our project <a className='text-teal-600' href='https://youtu.be/IR4Ylpa14VQ'>Taptag</a>.</>
+    content: <>- 🏅 Attended MobileHCI 2022 in Vancouver as a SV and presented our project <a className='text-accent hover:text-accent-hover' href='https://youtu.be/IR4Ylpa14VQ'>Taptag</a>.</>
   },
   {
     date: '08/2022',
@@ -75,7 +75,7 @@ export default function NewsSection() {
   return (
     <div>
       <div className="flex items-center mt-24 mb-8 space-x-3">
-        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent text-teal-600">
+        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
           NEWS
         </span>
       </div>
@@ -93,7 +93,7 @@ export default function NewsSection() {
       {newsItems.length > 5 && (
         <button
           onClick={() => setShowAllNews(!showAllNews)}
-          className="mt-4 text-teal-600 hover:underline focus:outline-none"
+          className="mt-4 text-accent hover:text-accent-hover hover:underline focus:outline-none"
         >
           {showAllNews ? 'Show less ▲' : 'Show more ▼'}
         </button>

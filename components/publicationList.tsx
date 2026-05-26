@@ -33,7 +33,7 @@ const PublicationList: React.FC<PublicationListProps> = ({ publications }) => {
             />
           </div>
           <div className="w-3/4">
-            <h2 className="font-semibold text-base text-teal-600 dark:text-teal-500">
+            <h2 className="font-semibold text-base text-accent">
               <a href={publication.paperLink} target="_blank" rel="noopener noreferrer">
                 {publication.title}
               </a>
@@ -51,12 +51,12 @@ const PublicationList: React.FC<PublicationListProps> = ({ publications }) => {
               <br />
               {publication.venue}
               {publication.videoLink && (
-                <span className="text-teal-600">
+                <span className="text-accent">
                     <a href={publication.videoLink} target="_blank" rel="noopener noreferrer">[video]</a>
                 </span>
               )}
               {publication.demoLink && (
-                <span className="text-teal-600">
+                <span className="text-accent">
                     <a href={publication.demoLink} target="_blank" rel="noopener noreferrer">[demo]</a>
                 </span>
               )}

@@ -10,7 +10,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        accent: 'var(--color-accent)',
+        accent: {
+          DEFAULT: 'var(--color-accent)',
+          hover: 'var(--color-accent-hover)',
+        },
         fore: {
           primary: 'var(--color-fore-primary)',
           secondary: 'var(--color-fore-secondary)',

@@ -59,7 +59,7 @@ export const Button = ({
     <a
       {...props}
       className={classNames(
-        'px-20 py-2 rounded bg-gradient-to-r from-teal-500 to-blue-500 bg-[length:150%] bg-left hover:bg-right transition-all text-back-secondary duration-[0.5s] ease-out  focus:text-accent',
+        'px-20 py-2 rounded bg-accent hover:bg-accent-hover transition-colors text-back-primary duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2',
         className
       )}
       href={link}
@@ -76,7 +76,7 @@ export const Blob = () => {
     <div aria-hidden="true">
       <div className="relative h-48 blob md:h-56 lg:h-64">
         <svg
-          className="h-full fill-teal-400 dark:fill-teal-500 animate-blob-spin"
+          className="h-full fill-back-accent animate-blob-spin"
           viewBox="0 0 278 279"
           xmlns="http://www.w3.org/2000/svg"
         >

@@ -4,19 +4,21 @@
 }
 
 .light {
-  --color-fore-primary: hsla(218, 23%, 23%, var(--tw-text-opacity));
-  --color-fore-secondary: hsla(218, 17%, 35%, var(--tw-text-opacity));
-  --color-fore-subtle: hsla(218, 17%, 35%, var(--tw-text-opacity));
+  /* Freya palette — MIT blue accent, ink/muted text scales */
+  --color-fore-primary: hsla(0, 0%, 10%, var(--tw-text-opacity));    /* ink-light #1a1a1a */
+  --color-fore-secondary: hsla(0, 0%, 25%, var(--tw-text-opacity));  /* body secondary */
+  --color-fore-subtle: hsla(0, 0%, 40%, var(--tw-text-opacity));     /* muted-light #666 */
 
-  --color-back-primary: hsla(0, 100%, 100%, var(--tw-bg-opacity));
-  --color-back-secondary: hsla(210, 38%, 95%, var(--tw-bg-opacity));
-  --color-back-subtle: hsla(210, 38%, 92%, var(--tw-bg-opacity));
+  --color-back-primary: hsla(0, 100%, 100%, var(--tw-bg-opacity));   /* white */
+  --color-back-secondary: hsla(0, 0%, 97%, var(--tw-bg-opacity));    /* off-white */
+  --color-back-subtle: hsla(0, 0%, 94%, var(--tw-bg-opacity));       /* divider */
 
-  --color-accent: hsla(211, 61%, 43%, var(--tw-text-opacity));
-  --color-back-accent: hsla(172, 67%, 70%, var(--tw-bg-opacity));
+  --color-accent: hsla(218, 100%, 31%, var(--tw-text-opacity));      /* MIT blue #0033A0 */
+  --color-accent-hover: hsla(218, 100%, 25%, var(--tw-text-opacity));/* MIT blue hover #002680 */
+  --color-back-accent: hsla(218, 100%, 95%, var(--tw-bg-opacity));   /* very pale MIT blue tint */
 
-  --color-gradient-accent1: hsla(209, 62%, 50%, 1);
-  --color-gradient-accent2: hsla(174, 59%, 56%, 1);
+  --color-gradient-accent1: hsla(218, 100%, 31%, 1);
+  --color-gradient-accent2: hsla(218, 100%, 50%, 1);
 
   --color-code-background: hsla(210, 38%, 95%, 1);
   --color-code-background-file: hsla(210, 38%, 90%, 1);
@@ -39,19 +41,21 @@
 }
 
 .dark {
-  --color-fore-primary: hsla(214, 32%, 91%, var(--tw-text-opacity));
-  --color-fore-secondary: hsla(214, 32%, 91%, var(--tw-text-opacity));
-  --color-fore-subtle: hsla(214, 20%, 69%, var(--tw-text-opacity));
+  /* Freya palette — MIT blue (lighter variant for dark bg readability) */
+  --color-fore-primary: hsla(0, 0%, 93%, var(--tw-text-opacity));    /* ink-dark #ededed */
+  --color-fore-secondary: hsla(0, 0%, 80%, var(--tw-text-opacity));
+  --color-fore-subtle: hsla(0, 0%, 60%, var(--tw-text-opacity));     /* muted-dark #999 */
 
-  --color-back-primary: hsla(221, 39%, 11%, var(--tw-bg-opacity));
-  --color-back-secondary: hsla(221, 39%, 8%, var(--tw-bg-opacity));
-  --color-back-subtle: hsla(221, 39%, 16%, var(--tw-bg-opacity));
+  --color-back-primary: hsla(0, 0%, 4%, var(--tw-bg-opacity));       /* near-black #0a0a0a */
+  --color-back-secondary: hsla(0, 0%, 8%, var(--tw-bg-opacity));
+  --color-back-subtle: hsla(0, 0%, 12%, var(--tw-bg-opacity));
 
-  --color-accent: hsla(172, 67%, 70%, var(--tw-text-opacity));
-  --color-back-accent: hsla(172, 67%, 70%, var(--tw-bg-opacity));
+  --color-accent: hsla(218, 70%, 65%, var(--tw-text-opacity));       /* lighter MIT blue for dark bg */
+  --color-accent-hover: hsla(218, 70%, 75%, var(--tw-text-opacity)); /* hover lighter */
+  --color-back-accent: hsla(218, 70%, 20%, var(--tw-bg-opacity));    /* dark blue tint */
 
-  --color-gradient-accent1: hsla(209, 62%, 50%, 1);
-  --color-gradient-accent2: hsla(174, 59%, 56%, 1);
+  --color-gradient-accent1: hsla(218, 70%, 65%, 1);
+  --color-gradient-accent2: hsla(218, 70%, 80%, 1);
 
   --color-code-background: hsla(221, 39%, 15%, 1);
   --color-code-background-file: hsla(221, 39%, 13%, 1);
