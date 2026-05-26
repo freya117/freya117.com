@@ -8,7 +8,8 @@ const PROJECTS_DIR = 'content/projects'
 export type ProjectFrontmatter = {
   title: string
   slug: string
-  year: number
+  year: number              // used for sort order (desc)
+  yearDisplay?: string      // optional override of the displayed label (e.g. '2025 – 2026')
   tags: string[]
   featured?: boolean
   hidden?: boolean // when true, excluded from /projects listing

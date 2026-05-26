@@ -124,7 +124,7 @@ export default function ProjectGrid({ projects }: Props) {
                   )}
                 </h2>
                 <p className="text-fore-secondary text-sm mt-1">
-                  {p.year}
+                  {p.yearDisplay ?? p.year}
                   {p.tags?.length ? ' · ' + p.tags.join(' · ') : ''}
                 </p>
                 {p.description && (
