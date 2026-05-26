@@ -52,7 +52,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   icons: {
-    shortcut: '/static/favicon.ico',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
   },
 }
 export default function RootLayout({
