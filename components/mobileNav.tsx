@@ -42,7 +42,7 @@ export function MobileNav() {
   }, [navShow])
 
   return (
-    <div className="text-xl sm:hidden" aria-hidden={!navShow}>
+    <div className="text-xl sm:hidden">
       <button
         type="button"
         className="fixed right-0 z-50 px-5 py-12 md:hidden focus:outline-none"

@@ -110,15 +110,15 @@ export default async function Page() {
             </h1>
             <br/>
             <div className="font-medium text-fore-subtle">
-              I'm an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">NYU</a>,
-              where I'll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">VIDA Center</a>,
-              advised by <a href="https://ctsilva.github.io/" className="font-medium text-accent hover:text-accent-hover hover:underline">Claudio Silva</a> and
-              co-advised by <a href="https://www.geosimulation.org/" className="font-medium text-accent hover:text-accent-hover hover:underline">Paul Torrens</a>.
+              I'm an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">NYU</a>,
+              where I'll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">VIDA Center</a>,
+              advised by <a href="https://ctsilva.github.io/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">Claudio Silva</a> and
+              co-advised by <a href="https://www.geosimulation.org/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">Paul Torrens</a>.
               <br/><br/>
               I work on <strong>vision-language models and spatial machine learning</strong> to help machines understand cities and the people in them.
               <br/><br/>
-              Previously, I completed a dual master's at MIT in EECS (<a href="https://www.csail.mit.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">CSAIL</a>,
-              advised by Randall Davis) and Urban Planning (<a href="https://cityform.mit.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">City Form Lab</a>,
+              Previously, I completed a dual master's at MIT in EECS (<a href="https://www.csail.mit.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">CSAIL</a>,
+              advised by Randall Davis) and Urban Planning (<a href="https://cityform.mit.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">City Form Lab</a>,
               advised by Andres Sevtsuk).
             </div>
           </div>
