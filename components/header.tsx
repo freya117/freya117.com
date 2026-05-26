@@ -14,8 +14,12 @@ const routes = [
     exact: true,
   },
   {
-    path: '/research',
-    label: 'Research',
+    path: '/publications',
+    label: 'Publications',
+  },
+  {
+    path: '/projects',
+    label: 'Projects',
   },
   {
     path: '/teaching',

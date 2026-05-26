@@ -49,6 +49,22 @@ export const publications: Publication[] = [
   },
   {
     title:
+      'Local Government Cybersecurity: An Analysis of Vulnerability Assessments and Institutional Capacity',
+    authors: [
+      'Jungwoo Chun',
+      'Freya Tan',
+      'Cristine Chen',
+      'Yuri Sakai',
+      'Gabriel Rodriguez Castillo',
+      'Lawrence Susskind',
+    ],
+    venue: 'Computers & Security',
+    year: 2026,
+    image: '/images/publication/cybersecurity.png',
+    status: 'under-review',
+  },
+  {
+    title:
       'Beyond Prompts: A reference-based interaction framework for generative AI in design fields',
     authors: [
       'Rohit Sanatani',

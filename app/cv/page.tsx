@@ -47,12 +47,21 @@ export default function CVPage() {
         </h2>
         <ul className="space-y-2 text-fore-secondary">
           <li>
-            Publications and projects:{' '}
+            Publications:{' '}
             <a
-              href="/research"
+              href="/publications"
               className="text-accent hover:text-accent-hover hover:underline"
             >
-              /research
+              /publications
+            </a>
+          </li>
+          <li>
+            Projects:{' '}
+            <a
+              href="/projects"
+              className="text-accent hover:text-accent-hover hover:underline"
+            >
+              /projects
             </a>
           </li>
           <li>

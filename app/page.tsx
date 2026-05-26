@@ -134,12 +134,18 @@ export default async function Page() {
 
       <PublicationList publications={selectedPublications} />
 
-      <div className="mt-4 text-sm">
+      <div className="mt-4 text-sm flex gap-4">
         <a
-          href="/research"
+          href="/publications"
           className="text-accent hover:text-accent-hover hover:underline"
         >
-          → See all publications and projects
+          → All publications
+        </a>
+        <a
+          href="/projects"
+          className="text-accent hover:text-accent-hover hover:underline"
+        >
+          → All projects
         </a>
       </div>
 
