@@ -53,7 +53,7 @@ const PublicationList: React.FC<PublicationListProps> = ({ publications }) => {
             </div>
           )}
           <div className={publication.image ? 'w-3/4' : 'w-full'}>
-            <h2 className="font-semibold text-base text-accent">
+            <h3 className="font-semibold text-base text-accent">
               {publication.paperLink ? (
                 <a
                   href={publication.paperLink}
@@ -67,7 +67,7 @@ const PublicationList: React.FC<PublicationListProps> = ({ publications }) => {
                 publication.title
               )}
               <StatusBadge status={publication.status} />
-            </h2>
+            </h3>
             <p className="text-fore-secondary text-sm mt-1">
               {publication.authors.map((author, authorIndex) => (
                 <span

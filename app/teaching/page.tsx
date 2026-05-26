@@ -97,7 +97,7 @@ export default function TeachingPage() {
                   Img
                 ))}
               <div>
-                <h3 className="text-base font-semibold text-fore-primary">
+                <h2 className="text-base font-semibold text-fore-primary">
                   {e.link ? (
                     <a
                       href={e.link}
@@ -110,7 +110,7 @@ export default function TeachingPage() {
                   ) : (
                     e.title
                   )}
-                </h3>
+                </h2>
                 <p className="text-sm text-fore-secondary mt-0.5">{e.role}</p>
                 <p className="text-xs italic text-fore-subtle mt-0.5">
                   {e.period}

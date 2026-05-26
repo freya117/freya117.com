@@ -29,9 +29,10 @@ export default async function Page() {
                 alt="Freya Tan"
                 width={256}
                 height={256}
-                quality={100}
+                quality={85}
                 priority={true}
                 placeholder="blur"
+                sizes="(max-width: 768px) 128px, (max-width: 1024px) 160px, 192px"
               />
             </div>
           </div>
@@ -108,7 +109,7 @@ export default async function Page() {
               Hi, I'm Freya Tan
             </h1>
             <br/>
-            <h4 className="font-medium text-fore-subtle">
+            <div className="font-medium text-fore-subtle">
               I'm an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">NYU</a>,
               where I'll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">VIDA Center</a>,
               advised by <a href="https://ctsilva.github.io/" className="font-medium text-accent hover:text-accent-hover hover:underline">Claudio Silva</a> and
@@ -119,7 +120,7 @@ export default async function Page() {
               Previously, I completed a dual master's at MIT in EECS (<a href="https://www.csail.mit.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">CSAIL</a>,
               advised by Randall Davis) and Urban Planning (<a href="https://cityform.mit.edu/" className="font-medium text-accent hover:text-accent-hover hover:underline">City Form Lab</a>,
               advised by Andres Sevtsuk).
-            </h4>
+            </div>
           </div>
         </div>
       </div>
@@ -127,9 +128,9 @@ export default async function Page() {
       <ResearchAreas />
 
       <div className="flex items-center mt-16 mb-8 space-x-3">
-        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
+        <h2 className="mt-3 mb-2 uppercase tracking-[.2em] text-accent text-sm font-semibold">
           SELECTED PUBLICATIONS
-        </span>
+        </h2>
       </div>
 
       <PublicationList publications={selectedPublications} />

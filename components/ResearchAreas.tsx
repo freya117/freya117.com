@@ -46,9 +46,9 @@ export default function ResearchAreas() {
   return (
     <section className="mt-16 mb-8">
       <div className="flex items-center mb-6 space-x-3">
-        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent text-sm">
+        <h2 className="mt-3 mb-2 uppercase tracking-[.2em] text-accent text-sm font-semibold">
           RESEARCH AREAS
-        </span>
+        </h2>
       </div>
 
       <div className="space-y-6">

@@ -9,9 +9,9 @@ export default function NewsSection() {
   return (
     <div>
       <div className="flex items-center mt-24 mb-8 space-x-3">
-        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
+        <h2 className="mt-3 mb-2 uppercase tracking-[.2em] text-accent text-sm font-semibold">
           NEWS
-        </span>
+        </h2>
       </div>
 
       <ul className="flex-col space-y-4">

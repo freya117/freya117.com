@@ -104,7 +104,7 @@ export default function ProjectGrid({ projects }: Props) {
                 </ThumbnailWrapper>
               )}
               <div className="pt-3">
-                <h3 className="text-sm font-semibold text-fore-primary">
+                <h2 className="text-sm font-semibold text-fore-primary">
                   {primary ? (
                     <a
                       href={primary}
@@ -117,7 +117,7 @@ export default function ProjectGrid({ projects }: Props) {
                   ) : (
                     p.title
                   )}
-                </h3>
+                </h2>
                 <p className="text-xs text-fore-subtle mt-0.5">
                   {p.year}
                   {p.tags?.length ? ' · ' + p.tags.join(' · ') : ''}
