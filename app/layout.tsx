@@ -75,14 +75,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <Analytics />
-        <BackgroundNoise />
       </body>
     </html>
-  )
-}
-
-function BackgroundNoise() {
-  return (
-    <div className="absolute inset-0 -z-20 opacity-80 h-full mix-blend-overlay noise-bg"></div>
   )
 }
