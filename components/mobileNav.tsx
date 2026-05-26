@@ -45,6 +45,8 @@ export function MobileNav() {
     <div className="text-xl sm:hidden">
       <button
         type="button"
+        aria-label={navShow ? 'Close navigation menu' : 'Open navigation menu'}
+        aria-expanded={navShow}
         className="fixed right-0 z-50 px-5 py-12 md:hidden focus:outline-none"
         onClick={_ => {
           setNavShow(!navShow)
