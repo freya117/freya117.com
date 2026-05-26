@@ -2,8 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import { Blob } from '../components/atoms'
 import { Blog24, Project24 } from '../components/icons'
-import profile_photo from '../public/images/profile_photo.png'
-import { GitHub24, MailAt24, Twitter24, GoogleScholar24 } from '../components/icons'
+import portrait from '../public/images/portrait.png'
+import { GitHub24, MailAt24, GoogleScholar24 } from '../components/icons'
 import PublicationList from '../components/publicationList';
 import NewsSection from 'components/NewsSection'
 
@@ -84,8 +84,8 @@ export default async function Page() {
           <div className="absolute top-10 flex items-center justify-center w-full">
             <div className="w-32 h-32 overflow-hidden rounded-full md:h-40 md:w-40 lg:h-48 lg:w-48">
               <Image
-                src={profile_photo}
-                alt="My profile photo"
+                src={portrait}
+                alt="Freya Tan"
                 width={256}
                 height={256}
                 quality={100}
@@ -100,8 +100,8 @@ export default async function Page() {
           <div className="flex flex-row items-center justify-center space-x-6 pointer-events-auto">
               <span>
                 <a
-                  href="mailto:cchen25@nd.edu"
-                  aria-label="Email cchen25@nd.edu"
+                  href="mailto:freya117@mit.edu"
+                  aria-label="Email freya117@mit.edu"
                   title="Email"
                   className="focus:text-accent"
                 >
@@ -110,7 +110,7 @@ export default async function Page() {
               </span>
               <span>
                 <a
-                  href="https://github.com/CRChenND"
+                  href="https://github.com/freya117"
                   aria-label="Visit GitHub profile"
                   title="Visit GitHub profile"
                   target="_blank"
@@ -120,21 +120,10 @@ export default async function Page() {
                   <GitHub24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
                 </a>
               </span>
+              {/* TODO: replace # with Freya's Google Scholar URL once profile is set up */}
               <span>
                 <a
-                  href="https://twitter.com/CharlieCRChen"
-                  aria-label="Visit Twitter profile"
-                  title="Visit Twitter profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="focus:text-accent"
-                >
-                  <Twitter24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://scholar.google.com/citations?user=-SO-GtcAAAAJ&hl=en&oi=ao"
+                  href="#"
                   aria-label="Visit Google Scholar profile"
                   title="Visit Google Scholar profile"
                   target="_blank"
@@ -152,21 +141,20 @@ export default async function Page() {
           <div>
             <h1 className="text-4xl font-semibold">
               <br/>
-              Hi, I'm Chaoran Chen
+              Hi, I'm Freya Tan
             </h1>
             <br/>
             <h4 className="font-medium text-fore-subtle">
-              I’m a fourth-year PhD student in the Department of <a href='https://cse.nd.edu/' className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Computer Science and Engineering</a> at the <a href="https://www.nd.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">University of Notre Dame</a>. 
-              I am co-advised by <a href='https://toby.li/' className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Dr. Toby Jia-Jun Li</a> and <a href='http://yes-lab.org/' className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Dr. Fanny Yanfang Ye</a>. 
-              Before joining ND, I received my M.S. degrees in Educational Technology and 
-              Applied Learning Science from Carnegie Mellon University. I received my Bachelor's degree in Industrial Design from Tongji University.
+              I'm an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">NYU</a>,
+              where I'll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">VIDA Center</a>,
+              advised by <a href="https://ctsilva.github.io/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Claudio Silva</a> and
+              co-advised by <a href="https://www.geosimulation.org/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">Paul Torrens</a>.
               <br/><br/>
-              My research lies at the intersection of <strong>Human-Computer Interaction, Usable Privacy and Security, and Large Language Models (LLMs)</strong>. 
-              I use human-centered design methods to investigate the dual relationship between LLMs and privacy/security: 
-              the Privacy and Security of LLMs (i.e., risks and vulnerabilities introduced by the use of LLMs) and 
-              LLMs for Privacy and Security (i.e., how LLMs can be used as tools to improve user privacy and security). 
-              My work argues that novel interface and interaction designs are essential to bridge these two perspectives and 
-              to empower end users in navigating the shifting privacy and security landscape shaped by generative AI.
+              I work on <strong>vision-language models and spatial machine learning</strong> to help machines understand cities and the people in them.
+              <br/><br/>
+              Previously, I completed a dual master's at MIT in EECS (<a href="https://www.csail.mit.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">CSAIL</a>,
+              advised by Randall Davis) and Urban Planning (<a href="https://cityform.mit.edu/" className="font-medium text-teal-600 dark:text-teal-600 hover:underline">City Form Lab</a>,
+              advised by Andres Sevtsuk).
             </h4>
           </div>
         </div>

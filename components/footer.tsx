@@ -1,5 +1,5 @@
 import { NavLink } from './atoms'
-import { GitHub24, MailAt24, Twitter24, GoogleScholar24} from './icons'
+import { GitHub24, MailAt24, GoogleScholar24 } from './icons'
 
 const routes = [
   {
@@ -34,13 +34,13 @@ export function Footer() {
               className="self-center text-xs tracking-wider md:self-end"
               aria-label="Copyright"
             >
-              © 2023. Chaoran Chen. All Rights Reserved.
+              © 2026 Freya Tan
             </span>
             <div className="flex flex-row items-center justify-center space-x-6 md:justify-end">
               <span>
                 <a
-                  href="mailto:cchen25@nd.edu"
-                  aria-label="Email cchen25@nd.edu"
+                  href="mailto:freya117@mit.edu"
+                  aria-label="Email freya117@mit.edu"
                   title="Email"
                   className="focus:text-accent"
                 >
@@ -49,7 +49,7 @@ export function Footer() {
               </span>
               <span>
                 <a
-                  href="https://github.com/CRChenND"
+                  href="https://github.com/freya117"
                   aria-label="Visit GitHub profile"
                   title="Visit GitHub profile"
                   target="_blank"
@@ -59,21 +59,10 @@ export function Footer() {
                   <GitHub24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
                 </a>
               </span>
+              {/* TODO: replace # with Freya's Google Scholar URL once profile is set up */}
               <span>
                 <a
-                  href="https://twitter.com/CharlieCRChen"
-                  aria-label="Visit Twitter profile"
-                  title="Visit Twitter profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="focus:text-accent"
-                >
-                  <Twitter24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://scholar.google.com/citations?user=-SO-GtcAAAAJ&hl=en&oi=ao"
+                  href="#"
                   aria-label="Visit Google Scholar profile"
                   title="Visit Google Scholar profile"
                   target="_blank"

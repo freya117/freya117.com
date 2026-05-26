@@ -18,16 +18,19 @@ const FontFiraCode = Fira_Code({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://freya117-com.vercel.app'),
   title: {
-    default: 'Chaoran Chen | HCI, Security, and privacy researcher',
-    template: '%s | Chaoran Chen',
+    default: 'Freya Tan | Spatial Intelligence — vision, language, and simulation',
+    template: '%s | Freya Tan',
   },
-  description: 'HCI, Security, and privacy researcher',
+  description:
+    'Freya Tan — incoming CS PhD at NYU (VIDA Center). Spatial AI, vision-language models, and machine learning for understanding cities and the people in them.',
   openGraph: {
-    title: 'Chaoran Chen',
-    description: 'HCI, Security, and privacy researcher',
-    url: 'https://chaoranchen.com',
-    siteName: 'Chaoran Chen',
+    title: 'Freya Tan',
+    description:
+      'Spatial Intelligence — vision, language, and simulation.',
+    url: 'https://freya117-com.vercel.app',
+    siteName: 'Freya Tan',
     images: [],
     locale: 'en-US',
     type: 'website',
@@ -41,8 +44,9 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    creator: '@CharlieCRChen',
-    title: 'Chaoran Chen',
+    title: 'Freya Tan',
+    description:
+      'Spatial Intelligence — vision, language, and simulation.',
     card: 'summary_large_image',
   },
   icons: {

@@ -42,7 +42,7 @@ const PublicationList: React.FC<PublicationListProps> = ({ publications }) => {
                 {publication.authors.map((author, authorIndex) => (
                     <span
                     key={authorIndex}
-                    className={author.includes('Chaoran Chen') ? 'font-bold' : ''} // Add font-bold class conditionally
+                    className={author.includes('Freya Tan') ? 'font-bold' : ''} // Add font-bold class conditionally
                     >
                     {author}
                     {authorIndex < publication.authors.length - 1 ? ', ' : ''}
