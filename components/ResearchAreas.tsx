@@ -51,7 +51,7 @@ export default function ResearchAreas() {
         </span>
       </div>
 
-      <div className="space-y-5">
+      <div className="space-y-6">
         {pillars.map((pillar) => (
           <article key={pillar.number} className="text-sm leading-relaxed">
             <div className="flex items-baseline gap-3">
@@ -63,7 +63,9 @@ export default function ResearchAreas() {
               </h3>
             </div>
             <p className="mt-1 ml-8 text-fore-secondary">
-              {pillar.description}{' '}
+              {pillar.description}
+            </p>
+            <div className="mt-1 ml-8 text-xs text-fore-subtle">
               {pillar.featured.map((item, i) => (
                 <span key={item.label}>
                   <a
@@ -73,11 +75,11 @@ export default function ResearchAreas() {
                     {item.label}
                   </a>
                   {i < pillar.featured.length - 1 && (
-                    <span className="text-fore-subtle">, </span>
+                    <span>, </span>
                   )}
                 </span>
               ))}
-            </p>
+            </div>
           </article>
         ))}
       </div>

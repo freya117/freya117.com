@@ -3,7 +3,7 @@ import React from 'react'
 import { Blob } from '../components/atoms'
 import { Blog24, Project24 } from '../components/icons'
 import portrait from '../public/images/portrait.png'
-import { GitHub24, MailAt24, GoogleScholar24 } from '../components/icons'
+import { GitHub24, MailAt24, GoogleScholar24, Twitter24, LinkedIn24 } from '../components/icons'
 import PublicationList from '../components/publicationList';
 import NewsSection from 'components/NewsSection'
 import ResearchAreas from '../components/ResearchAreas'
@@ -113,7 +113,7 @@ export default async function Page() {
                 <a
                   href="https://github.com/freya117"
                   aria-label="Visit GitHub profile"
-                  title="Visit GitHub profile"
+                  title="GitHub"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="focus:text-accent"
@@ -121,17 +121,40 @@ export default async function Page() {
                   <GitHub24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
                 </a>
               </span>
-              {/* TODO: replace # with Freya's Google Scholar URL once profile is set up */}
               <span>
                 <a
-                  href="#"
+                  href="https://scholar.google.com/citations?user=yiXTUIwAAAAJ&hl=en"
                   aria-label="Visit Google Scholar profile"
-                  title="Visit Google Scholar profile"
+                  title="Google Scholar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="focus:text-accent"
                 >
                   <GoogleScholar24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://x.com/FreyaTan117"
+                  aria-label="Visit X profile"
+                  title="X (Twitter)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:text-accent"
+                >
+                  <Twitter24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
+                </a>
+              </span>
+              <span>
+                <a
+                  href="https://www.linkedin.com/in/freya-tan-888145258/"
+                  aria-label="Visit LinkedIn profile"
+                  title="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="focus:text-accent"
+                >
+                  <LinkedIn24 className="transition-transform ease-in-out hover:-translate-y-1 hover:text-accent" />
                 </a>
               </span>
             </div>
