@@ -60,7 +60,7 @@ export const publications: Publication[] = [
     venue: 'HCI International 2026',
     year: 2026,
     image: '/images/publication/beyond-prompts.jpg',
-    status: 'under-review',
+    status: 'accepted',
   },
   {
     title:
