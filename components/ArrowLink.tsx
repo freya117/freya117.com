@@ -18,9 +18,9 @@ export function ArrowLink({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center gap-1 text-accent hover:text-accent-hover transition-colors ${className}`}
+      className={`group inline-flex items-center gap-1 no-underline text-accent hover:text-accent-hover transition-colors ${className}`}
     >
-      <span className="group-hover:underline underline-offset-2 decoration-accent">
+      <span className="no-underline group-hover:underline underline-offset-2 decoration-accent">
         {children}
       </span>
       <svg
@@ -60,9 +60,9 @@ export function ChevronToggle({
       type="button"
       onClick={onClick}
       aria-expanded={open}
-      className={`group inline-flex items-center gap-1 text-accent hover:text-accent-hover transition-colors focus:outline-none ${className}`}
+      className={`group inline-flex items-center gap-1 no-underline text-accent hover:text-accent-hover transition-colors focus:outline-none ${className}`}
     >
-      <span className="group-hover:underline underline-offset-2 decoration-accent">
+      <span className="no-underline group-hover:underline underline-offset-2 decoration-accent">
         {open ? labelOpen : labelClosed}
       </span>
       <svg

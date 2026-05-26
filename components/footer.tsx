@@ -15,7 +15,7 @@ export function Footer() {
             className="text-xs text-fore-subtle tracking-wider"
             aria-label="Copyright"
           >
-            © 2026 Freya Tan ·{' '}
+            © 2026 Freya Tan. All Rights Reserved. ·{' '}
             <a
               href="https://github.com/freya117/freya117.com"
               target="_blank"

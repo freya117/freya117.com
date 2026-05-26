@@ -1,7 +1,6 @@
 'use client'
 import { useState, useMemo } from 'react'
 import Image from 'next/image'
-import { GitHub24 } from './icons'
 import type { ProjectFrontmatter } from '../lib/projects'
 
 const TAG_LABELS: Record<string, string> = {
@@ -34,7 +33,6 @@ function ExternalLink({ href, label }: { href: string; label: string }) {
 export default function ProjectGrid({ projects }: Props) {
   const [activeTag, setActiveTag] = useState<string>('all')
 
-  // Tags available for filtering = union of tags appearing in visible projects
   const availableTags = useMemo(() => {
     const set = new Set<string>()
     projects.forEach((p) => p.tags?.forEach((t) => set.add(t)))
@@ -49,7 +47,7 @@ export default function ProjectGrid({ projects }: Props) {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-2 mb-6 text-xs">
+      <div className="flex flex-wrap gap-2 mb-10 text-xs">
         {availableTags.map((key) => (
           <button
             key={key}
@@ -65,52 +63,58 @@ export default function ProjectGrid({ projects }: Props) {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="flex-col space-y-10">
         {filtered.map((p) => {
-          // Primary external link (first in priority order): project > paper > demo > github
           const primary =
             p.links?.project ||
             p.links?.paper ||
             p.links?.demo ||
             p.links?.github
 
-          const ThumbnailWrapper = primary ? 'a' : 'div'
-          const wrapperProps = primary
-            ? { href: primary, target: '_blank', rel: 'noopener noreferrer' as const }
-            : {}
-
           return (
             <article
               key={p.slug}
               id={p.slug}
-              className="scroll-mt-24"
+              className="flex w-full space-x-4 scroll-mt-24"
             >
               {p.thumbnail && (
-                <ThumbnailWrapper
-                  {...wrapperProps}
-                  className={`block aspect-[4/3] relative bg-back-subtle rounded overflow-hidden ${
-                    primary ? 'group cursor-pointer' : ''
-                  }`}
-                >
-                  <Image
-                    src={p.thumbnail}
-                    alt={p.title}
-                    fill
-                    className={`object-cover transition-opacity ${
-                      primary ? 'group-hover:opacity-85' : ''
-                    }`}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </ThumbnailWrapper>
-              )}
-              <div className="pt-3">
-                <h2 className="text-sm font-semibold text-fore-primary">
+                <div className="w-1/4 mt-2 shrink-0">
                   {primary ? (
                     <a
                       href={primary}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-accent transition-colors"
+                      className="block aspect-[4/3] relative bg-back-subtle rounded overflow-hidden group"
+                    >
+                      <Image
+                        src={p.thumbnail}
+                        alt={p.title}
+                        fill
+                        className="object-cover transition-opacity group-hover:opacity-85"
+                        sizes="(max-width: 768px) 25vw, 180px"
+                      />
+                    </a>
+                  ) : (
+                    <div className="aspect-[4/3] relative bg-back-subtle rounded overflow-hidden">
+                      <Image
+                        src={p.thumbnail}
+                        alt={p.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 25vw, 180px"
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+              <div className={p.thumbnail ? 'w-3/4' : 'w-full'}>
+                <h2 className="font-semibold text-base text-accent">
+                  {primary ? (
+                    <a
+                      href={primary}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-accent-hover hover:underline"
                     >
                       {p.title}
                     </a>
@@ -118,12 +122,12 @@ export default function ProjectGrid({ projects }: Props) {
                     p.title
                   )}
                 </h2>
-                <p className="text-xs text-fore-subtle mt-0.5">
+                <p className="text-fore-secondary text-sm mt-1">
                   {p.year}
                   {p.tags?.length ? ' · ' + p.tags.join(' · ') : ''}
                 </p>
                 {p.description && (
-                  <p className="text-xs text-fore-secondary mt-1 leading-relaxed">
+                  <p className="text-fore-secondary text-sm mt-2 leading-relaxed">
                     {p.description}
                   </p>
                 )}
@@ -131,7 +135,7 @@ export default function ProjectGrid({ projects }: Props) {
                   p.links?.paper ||
                   p.links?.demo ||
                   p.links?.project) && (
-                  <div className="mt-2 space-x-2 text-xs">
+                  <div className="mt-2 space-x-3 text-xs">
                     {p.links?.paper && <ExternalLink href={p.links.paper} label="Paper" />}
                     {p.links?.github && <ExternalLink href={p.links.github} label="GitHub" />}
                     {p.links?.demo && <ExternalLink href={p.links.demo} label="Demo" />}
