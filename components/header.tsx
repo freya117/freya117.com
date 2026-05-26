@@ -10,16 +10,16 @@ import { ThemeToggle } from './themeToggle'
 const routes = [
   {
     path: '/',
-    label: 'Home',
+    label: 'About',
     exact: true,
   },
   {
-    path: '/publications',
-    label: 'Publications',
+    path: '/research',
+    label: 'Research',
   },
   {
-    path: '/cv',
-    label: 'CV',
+    path: '/teaching',
+    label: 'Teaching',
   },
 ]
 

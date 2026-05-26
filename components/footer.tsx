@@ -4,16 +4,16 @@ import { GitHub24, MailAt24, GoogleScholar24, Twitter24, LinkedIn24 } from './ic
 const routes = [
   {
     path: '/',
-    label: 'Home',
+    label: 'About',
     exact: true,
   },
   {
-    path: '/publications',
-    label: 'Publications',
+    path: '/research',
+    label: 'Research',
   },
   {
-    path: '/cv',
-    label: 'CV',
+    path: '/teaching',
+    label: 'Teaching',
   },
 ]
 

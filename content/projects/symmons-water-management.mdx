@@ -1,0 +1,137 @@
+---
+title: "Symmons Water Management AI Platform"
+year: 2025
+tags:
+  - llm
+  - urban-computing
+thumbnail: /images/projects/symmons-water-management.jpg
+description: "Generative AI and MLOps for automated water management, anomaly detection, and predictive maintenance."
+---
+
+
+## Project Overview
+
+As a Machine Learning Engineer Intern at Symmons Evolution, I contributed to transforming water management through AI-driven automation and predictive analytics. This project integrated IoT sensors, machine learning models, and generative AI to create an intelligent water management platform that helps facilities conserve millions of gallons of water while reducing operational costs.
+
+The Evolution Building Management System leverages real-time anomaly detection, predictive maintenance, and LLM-powered diagnostic tools to enable proactive facility management across hospitality, commercial, and multifamily properties.
+
+## Technical Challenge
+
+The primary challenge was developing a scalable ML-powered anomaly detection system that could:
+
+- Automatically detect, classify, and contextualize water inefficiencies
+- Integrate seamlessly with existing Evolution platform infrastructure  
+- Provide low-latency real-time processing across thousands of properties
+- Generate actionable insights for non-expert facility managers through Generative AI
+- Implement robust MLOps framework for continuous model improvement
+
+## Solution Architecture
+
+### AI-Powered Anomaly Detection
+
+I designed and implemented machine learning models for real-time water usage analysis:
+
+- **Time-Series ML Models**: Trained on historical sensor data (flow rates, temperature, humidity) to identify deviations from normal patterns
+- **Adaptive Learning**: Self-improving models that dynamically adjust anomaly thresholds based on seasonal patterns and property characteristics
+- **Multi-Sensor Correlation**: AI processing of data from multiple IoT sensors for cross-referenced anomaly validation
+- **Event Classification**: Automated categorization of detected anomalies (persistent leaks, irregular consumption, equipment malfunctions)
+
+### Scalable MLOps Infrastructure
+
+Built a comprehensive MLOps pipeline using AWS services:
+
+- **AWS SageMaker**: Enabled automated model training and retraining using live operational data
+- **Lambda Functions**: Provided sub-second anomaly detection through serverless inference
+- **API Gateway & DynamoDB**: Ensured real-time communication between AI models and facility management tools
+- **Version-Controlled Deployment**: Implemented automated pipeline for validated model deployment
+
+### Generative AI Integration
+
+Developed LLM-powered contextualization system:
+
+- **Retrieval-Augmented Generation (RAG)**: Integrated AWS Bedrock to provide specific, explainable recommendations based on technical manuals and maintenance logs
+- **Automated Troubleshooting**: AI suggests corrective actions like adjusting pump flow rates or recalibrating valve settings
+- **Conversational Interface**: Enabled facility managers to receive real-time troubleshooting help through AI assistants
+- **Historical Analysis**: AI tracks recurring issues to identify long-term infrastructure inefficiencies
+
+## Key Technical Contributions
+
+### Real-Time Data Processing Pipeline
+
+- Designed scalable data ingestion system processing millions of sensor readings
+- Implemented AWS IoT Core integration for real-time streaming
+- Built OpenSearch-based vector database for fast retrieval of historical anomaly records
+- Optimized edge computing for low-latency local anomaly detection
+
+### Model Performance Optimization
+
+- Developed multi-objective loss functions to balance detection accuracy with false positive rates
+- Implemented dynamic threshold adjustment based on property-specific usage patterns
+- Created experimentation framework for A/B testing different ML models
+- Built flexible AI knowledge base architecture for testing different vector databases
+
+### LLM Reliability Enhancement
+
+- Designed prompt engineering strategies to improve diagnostic accuracy
+- Implemented structured data integration with generative AI models
+- Created validation frameworks for LLM-generated recommendations
+- Developed contextual reasoning systems using facility-specific metadata
+
+## Impact and Results
+
+### Water Conservation
+- **5 billion gallons projected savings** over next five years
+- **80+ million gallons saved in 2024** across 74 high-usage sites
+- Currently monitoring over **1 billion gallons annually**
+
+### Cost Reduction
+- **400+ leak incidents** identified and resolved
+- **$5 million prevented** in water damage
+- **8-12% reduction** in water heating costs through AI-guided temperature optimization
+- **$10k+ average savings** per prevented incident
+
+### Operational Efficiency
+- **Reduced MTTR by over 1 hour** per incident compared to traditional methods
+- Enabled proactive maintenance across hundreds of properties
+- **90%+ accuracy** in anomaly detection with minimal false positives
+- Established foundation for self-healing building infrastructure
+
+## Technical Stack
+
+**Machine Learning & AI:**
+- AWS SageMaker for model training and deployment
+- AWS Bedrock for Generative AI and RAG implementation
+- Python, TensorFlow/PyTorch for model development
+- Time-series analysis and anomaly detection algorithms
+
+**Cloud Infrastructure:**
+- AWS IoT Core for sensor data ingestion
+- AWS Lambda for serverless inference
+- AWS API Gateway for real-time communication
+- AWS DynamoDB for scalable data storage
+- AWS OpenSearch for vector database functionality
+
+**MLOps & DevOps:**
+- Automated model training and deployment pipelines
+- Version control for ML models and experiments
+- A/B testing framework for model comparison
+- Monitoring and alerting for model performance
+
+## Future Enhancements
+
+The platform is evolving toward autonomous water management:
+
+- **Enhanced Predictive Models**: More precise failure prediction with extended forecast horizons
+- **Self-Healing Infrastructure**: Real-time system adjustments without human intervention  
+- **Advanced Contextualization**: Improved root cause analysis through deeper LLM integration
+- **Dynamic Optimization**: AI-driven system parameter adjustments for maximum efficiency
+
+## Applications Beyond Water Management
+
+The developed methodologies have broader applications in:
+- **Smart Building Systems**: HVAC, lighting, and energy management
+- **Industrial IoT**: Predictive maintenance across manufacturing systems
+- **Urban Infrastructure**: City-wide utility monitoring and optimization
+- **Environmental Monitoring**: Large-scale sensor network analysis
+
+This project demonstrated the transformative potential of combining IoT, machine learning, and generative AI to create intelligent, autonomous infrastructure management systems that deliver both environmental and economic benefits at scale.
