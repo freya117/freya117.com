@@ -39,16 +39,6 @@ export const publications: Publication[] = [
   },
   {
     title:
-      'Sidewalk Moments: Decompose visual impressions based on dynamic city walk video footage',
-    authors: ['Liu Liu', 'Freya Tan', 'Fabio Duarte'],
-    venue: 'AAG 2026',
-    year: 2026,
-    image: '/images/publication/sidewalk-moments.jpg',
-    projectLink: '/projects/gist-blur-attention',
-    status: 'accepted',
-  },
-  {
-    title:
       'Local Government Cybersecurity: An Analysis of Vulnerability Assessments and Institutional Capacity',
     authors: [
       'Jungwoo Chun',
@@ -89,6 +79,15 @@ export const publications: Publication[] = [
       'https://www.sciencedirect.com/science/article/pii/S0378778826005645',
     projectLink: '/projects/neighborhood-archetypes',
     status: 'published',
+  },
+  {
+    title:
+      'Sidewalk Moments: Decompose visual impressions based on dynamic city walk video footage',
+    authors: ['Liu Liu', 'Freya Tan', 'Fabio Duarte'],
+    venue: 'AAG 2026',
+    year: 2026,
+    image: '/images/publication/sidewalk-moments.jpg',
+    status: 'accepted',
   },
   {
     title:

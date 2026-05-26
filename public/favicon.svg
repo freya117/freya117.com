@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Freya Tan">
+  <rect width="64" height="64" rx="14" fill="#0033A0"/>
+  <text
+    x="50%"
+    y="50%"
+    dy="0.36em"
+    text-anchor="middle"
+    font-family="ui-sans-serif, system-ui, -apple-system, Inter, sans-serif"
+    font-weight="600"
+    font-size="40"
+    fill="#ffffff"
+  >F</text>
+</svg>
