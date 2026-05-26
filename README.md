@@ -8,7 +8,7 @@ Personal academic website — Freya Tan, incoming CS PhD at NYU (VIDA Center, ad
 
 - [Next.js](https://nextjs.org/) 13 (App Router) · TypeScript · [Tailwind CSS](https://tailwindcss.com/)
 - MDX for project pages · [next-themes](https://github.com/pacocoursey/next-themes) for dark mode
-- Deployed on [Vercel](https://vercel.com)
+- Deployed on [Vercel](https://vercel.com) at https://freya117-com.vercel.app
 
 ## Local development
 
