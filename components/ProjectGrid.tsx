@@ -9,6 +9,7 @@ const TAG_LABELS: Record<string, string> = {
   'spatial-ml': 'Spatial ML',
   llm: 'LLM',
   'urban-computing': 'Urban Computing',
+  'ui-ux': 'UI/UX',
   design: 'Design',
 }
 
@@ -36,7 +37,7 @@ export default function ProjectGrid({ projects }: Props) {
   const availableTags = useMemo(() => {
     const set = new Set<string>()
     projects.forEach((p) => p.tags?.forEach((t) => set.add(t)))
-    const ordered = ['vision-language', 'spatial-ml', 'llm', 'urban-computing', 'design']
+    const ordered = ['vision-language', 'spatial-ml', 'llm', 'urban-computing', 'ui-ux', 'design']
     return ['all', ...ordered.filter((t) => set.has(t))]
   }, [projects])
 
