@@ -15,8 +15,8 @@ const pillars: Pillar[] = [
       'Multimodal models that parse social interactions, urban form, and built environments from imagery and street-view data.',
     featured: [
       { label: 'MINGLE', href: 'https://arxiv.org/abs/2509.13484' },
-      { label: 'Seeing HAI', href: '/projects/sidewalk-ballet' },
-      { label: 'Sidewalk Moments', href: '/projects/gist-blur-attention' },
+      { label: 'Seeing HAI', href: '/projects#sidewalk-ballet' },
+      { label: 'Sidewalk Moments', href: '/projects#gist-blur-attention' },
     ],
   },
   {
@@ -25,8 +25,8 @@ const pillars: Pillar[] = [
     description:
       'Graph-based and geometric embeddings for trajectories, road networks, and neighborhood archetypes.',
     featured: [
-      { label: 'Maine Pedestrian Model', href: '/projects/maine-pedestrian-model' },
-      { label: 'Neighborhood Archetypes', href: '/projects/neighborhood-archetypes' },
+      { label: 'Maine Pedestrian Model', href: '/projects#maine-pedestrian-model' },
+      { label: 'Neighborhood Archetypes', href: '/projects#neighborhood-archetypes' },
     ],
   },
   {
@@ -37,7 +37,7 @@ const pillars: Pillar[] = [
     featured: [
       { label: 'GeoSense-LLM', href: '#' },
       { label: 'Beyond Prompts', href: '#' },
-      { label: 'Symmons Diagnostic', href: '/projects/symmons-water-management' },
+      { label: 'Symmons Diagnostic', href: '/projects#symmons-water-management' },
     ],
   },
 ]
