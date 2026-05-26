@@ -13,6 +13,7 @@ import PublicationList from '../components/publicationList'
 import NewsSection from 'components/NewsSection'
 import ResearchAreas from '../components/ResearchAreas'
 import { selectedPublications } from '../data/selectedPublications'
+import { ArrowLink } from '../components/ArrowLink'
 
 
 export default async function Page() {
@@ -135,19 +136,9 @@ export default async function Page() {
 
       <PublicationList publications={selectedPublications} />
 
-      <div className="mt-4 text-sm flex gap-4">
-        <a
-          href="/publications"
-          className="text-accent hover:text-accent-hover hover:underline"
-        >
-          → All publications
-        </a>
-        <a
-          href="/projects"
-          className="text-accent hover:text-accent-hover hover:underline"
-        >
-          → All projects
-        </a>
+      <div className="mt-6 text-sm flex gap-6">
+        <ArrowLink href="/publications">All publications</ArrowLink>
+        <ArrowLink href="/projects">All projects</ArrowLink>
       </div>
 
       <NewsSection />

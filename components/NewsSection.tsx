@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { newsItems } from '../data/news'
+import { ArrowLink, ChevronToggle } from './ArrowLink'
 
 export default function NewsSection() {
   const [showAll, setShowAll] = useState(false)
@@ -24,21 +25,14 @@ export default function NewsSection() {
         ))}
       </ul>
 
-      <div className="mt-4 text-sm flex gap-4">
+      <div className="mt-6 text-sm flex items-center gap-6">
         {newsItems.length > 5 && (
-          <button
+          <ChevronToggle
+            open={showAll}
             onClick={() => setShowAll(!showAll)}
-            className="text-accent hover:text-accent-hover hover:underline focus:outline-none"
-          >
-            {showAll ? 'Show less ▲' : 'Show more ▼'}
-          </button>
+          />
         )}
-        <a
-          href="/news"
-          className="text-accent hover:text-accent-hover hover:underline"
-        >
-          → All news
-        </a>
+        <ArrowLink href="/news">All news</ArrowLink>
       </div>
     </div>
   )

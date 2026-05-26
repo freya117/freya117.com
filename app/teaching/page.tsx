@@ -21,12 +21,12 @@ const entries: TeachingEntry[] = [
   {
     title: 'Kaufman Teaching Certificate Program',
     role: 'MIT Teaching and Learning Lab · Cohort participant',
-    period: 'Sep 2025 – Present',
+    period: 'Sep 2025 – Dec 2025',
     image: '/teaching/kaufman-certificate.jpg',
     link: 'https://tll.mit.edu/programming/grad-student-programming/kaufman-teaching-certificate-program/',
     description: [
-      'Developed AI for Sustainable Urban Energy Systems as a complete course package — description, week-by-week syllabus, unit-level ILOs, formative & summative assessments, rubrics, and active-learning lesson plans.',
-      'Completed 8 workshops and delivered 2 microteaching sessions; applied assessment alignment, scaffolding, inclusive teaching, and structured feedback to iterate materials based on peer and instructor review.',
+      'Designed a graduate course package on AI for sustainable urban energy systems — syllabus, intended learning outcomes, assessments, and active-learning lesson plans.',
+      'Completed 8 workshops + 2 microteaching sessions on assessment alignment, scaffolding, and inclusive teaching.',
     ],
   },
   {
@@ -36,8 +36,8 @@ const entries: TeachingEntry[] = [
     image: '/teaching/cybersecurity-clinic.jpg',
     link: 'https://urbancyberdefense.mit.edu/',
     description: [
-      "Supported student teams' end-to-end Cybersecurity Vulnerability Assessments for public agencies and hospitals — data collection, threat modeling, mitigation planning. Aligned deliverables with NIST Cybersecurity Framework standards.",
-      'Provided technical guidance on network security, supply-chain vulnerabilities, vendor risk management, and ransomware readiness. Led recitations on client-interview prep, data analysis workflows, and secure-collaboration tools (Dropbox, CISA Toolkit).',
+      'Guided student teams through cybersecurity vulnerability assessments for public agencies and hospitals — threat modeling, mitigation planning, NIST-framework deliverables.',
+      'Led weekly recitations on network security, vendor and supply-chain risk, ransomware readiness, and data analysis workflows.',
     ],
   },
   {
@@ -47,8 +47,9 @@ const entries: TeachingEntry[] = [
     image: '/teaching/pedestrian-modeling.jpg',
     link: 'https://mitxonline.mit.edu/courses/course-v1:MITxT+11.024x/',
     description: [
-      'Supported student teams in spatial analysis, pedestrian modeling, and proposal development to enhance walkability and public-realm design in Kendall Square — in collaboration with the Cambridge Redevelopment Authority and community partners.',
-      'Guided hands-on training in GIS, network-based pedestrian analysis, and spatial modeling in Python — enabling students to assess pedestrian accessibility, simulate urban-design impacts, and produce data-driven planning proposals.',
+      'Taught Python-based spatial modeling, network analysis, and GIS for pedestrian flow estimation.',
+      'Mentored student teams applying the methods to real urban scenarios in Kendall Square.',
+      'Contributed to translating the course into an MITx open online module (MITxT+11.024x).',
     ],
   },
 ]
