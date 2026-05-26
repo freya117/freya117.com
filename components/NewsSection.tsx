@@ -24,14 +24,22 @@ export default function NewsSection() {
         ))}
       </ul>
 
-      {newsItems.length > 5 && (
-        <button
-          onClick={() => setShowAll(!showAll)}
-          className="mt-4 text-accent hover:text-accent-hover hover:underline focus:outline-none"
+      <div className="mt-4 text-sm flex gap-4">
+        {newsItems.length > 5 && (
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="text-accent hover:text-accent-hover hover:underline focus:outline-none"
+          >
+            {showAll ? 'Show less ▲' : 'Show more ▼'}
+          </button>
+        )}
+        <a
+          href="/news"
+          className="text-accent hover:text-accent-hover hover:underline"
         >
-          {showAll ? 'Show less ▲' : 'Show more ▼'}
-        </button>
-      )}
+          → All news
+        </a>
+      </div>
     </div>
   )
 }
