@@ -29,6 +29,10 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
         mono: ['var(--font-fira-code)', ...fontFamily.mono],
+        // Serif candidates for pillar number A/B (Task 2.3). Pick one in Stage 2.
+        'serif-fraunces': ['var(--font-fraunces)', ...fontFamily.serif],
+        'serif-caslon': ['var(--font-libre-caslon)', ...fontFamily.serif],
+        'serif-source': ['var(--font-source-serif)', ...fontFamily.serif],
       },
       animation: {
         'blob-spin': 'blobbing 25s linear infinite',

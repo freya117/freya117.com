@@ -1,5 +1,11 @@
 import { Metadata } from 'next'
-import { Fira_Code, Inter } from 'next/font/google'
+import {
+  Fira_Code,
+  Inter,
+  Fraunces,
+  Libre_Caslon_Text,
+  Source_Serif_4,
+} from 'next/font/google'
 import { Analytics } from '../components/analytics'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
@@ -10,11 +16,34 @@ import './styles/globals.css'
 const FontInter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
 })
 
 const FontFiraCode = Fira_Code({
   subsets: ['latin'],
   variable: '--font-fira-code',
+  display: 'swap',
+})
+
+// Three serif candidates for the numbered pillar A/B test (Task 2.3).
+// Pick one in Stage 2 and remove the other two imports + variables to trim font payload.
+const FontFraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  display: 'swap',
+})
+
+const FontLibreCaslon = Libre_Caslon_Text({
+  subsets: ['latin'],
+  variable: '--font-libre-caslon',
+  weight: ['400', '700'],
+  display: 'swap',
+})
+
+const FontSourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  variable: '--font-source-serif',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -61,7 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${FontInter.variable} ${FontFiraCode.variable} font-sans flex flex-col min-h-screen relative`}
+        className={`${FontInter.variable} ${FontFiraCode.variable} ${FontFraunces.variable} ${FontLibreCaslon.variable} ${FontSourceSerif.variable} font-sans flex flex-col min-h-screen relative`}
       >
         <MobileNav />
         <Header />
