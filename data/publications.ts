@@ -77,7 +77,6 @@ export const publications: Publication[] = [
     image: '/images/publication/neighborhood-archetypes.jpg',
     paperLink:
       'https://www.sciencedirect.com/science/article/pii/S0378778826005645',
-    projectLink: '/projects/neighborhood-archetypes',
     status: 'published',
   },
   {

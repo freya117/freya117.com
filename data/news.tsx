@@ -95,8 +95,13 @@ export const newsItems: NewsItem[] = [
     content: (
       <>
         - 🧑‍🏫 Started TA for{' '}
-        <em>MIT 11.074/274 Cybersecurity Clinic</em> under Lawrence Susskind &amp;
-        Jungwoo Chun.
+        <a
+          href="https://urbancyberdefense.mit.edu/"
+          className="font-medium text-accent hover:text-accent-hover hover:underline"
+        >
+          MIT 11.074/274 Cybersecurity Clinic
+        </a>{' '}
+        under Lawrence Susskind &amp; Jungwoo Chun.
       </>
     ),
   },
@@ -124,7 +129,13 @@ export const newsItems: NewsItem[] = [
     date: '01/2025',
     content: (
       <>
-        - 🧑‍🏫 TA for <em>MIT 11.024/324 Modeling Pedestrian Activity in Cities</em>{' '}
+        - 🧑‍🏫 TA for{' '}
+        <a
+          href="https://mitxonline.mit.edu/courses/course-v1:MITxT+11.024x/"
+          className="font-medium text-accent hover:text-accent-hover hover:underline"
+        >
+          MIT 11.024/324 Modeling Pedestrian Activity in Cities
+        </a>{' '}
         under Andres Sevtsuk.
       </>
     ),
