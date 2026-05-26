@@ -23,7 +23,7 @@ const pillars: Pillar[] = [
     number: '02',
     title: 'Spatial Representation Learning',
     description:
-      'Graph-based and geometric embeddings for trajectories, road networks, and neighborhood archetypes — bridging discrete spatial structure and continuous representation.',
+      'Graph-based and geometric embeddings for trajectories, road networks, and neighborhood archetypes.',
     featured: [
       { label: 'Maine Pedestrian Model', href: '/projects/maine-pedestrian-model' },
       { label: 'Neighborhood Archetypes', href: '/projects/neighborhood-archetypes' },
@@ -44,46 +44,40 @@ const pillars: Pillar[] = [
 
 export default function ResearchAreas() {
   return (
-    <section className="mt-24 mb-8">
-      <div className="flex items-center mb-8 space-x-3">
-        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
+    <section className="mt-16 mb-8">
+      <div className="flex items-center mb-6 space-x-3">
+        <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent text-sm">
           RESEARCH AREAS
         </span>
       </div>
 
-      <div className="space-y-12">
+      <div className="space-y-5">
         {pillars.map((pillar) => (
-          <article
-            key={pillar.number}
-            className="grid grid-cols-[auto_1fr] gap-6 md:gap-10"
-          >
-            <div className="font-serif-fraunces text-4xl md:text-5xl text-fore-subtle leading-none">
-              {pillar.number}
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-fore-primary mb-2">
+          <article key={pillar.number} className="text-sm leading-relaxed">
+            <div className="flex items-baseline gap-3">
+              <span className="text-fore-subtle tabular-nums text-xs">
+                {pillar.number}
+              </span>
+              <h3 className="font-semibold text-fore-primary">
                 {pillar.title}
               </h3>
-              <p className="text-base text-fore-secondary leading-relaxed mb-3">
-                {pillar.description}
-              </p>
-              <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
-                <span className="text-fore-subtle">Featured:</span>
-                {pillar.featured.map((item, i) => (
-                  <span key={item.label}>
-                    <a
-                      href={item.href}
-                      className="text-accent hover:text-accent-hover hover:underline"
-                    >
-                      {item.label}
-                    </a>
-                    {i < pillar.featured.length - 1 && (
-                      <span className="text-fore-subtle"> ·</span>
-                    )}
-                  </span>
-                ))}
-              </div>
             </div>
+            <p className="mt-1 ml-8 text-fore-secondary">
+              {pillar.description}{' '}
+              {pillar.featured.map((item, i) => (
+                <span key={item.label}>
+                  <a
+                    href={item.href}
+                    className="text-accent hover:text-accent-hover hover:underline"
+                  >
+                    {item.label}
+                  </a>
+                  {i < pillar.featured.length - 1 && (
+                    <span className="text-fore-subtle">, </span>
+                  )}
+                </span>
+              ))}
+            </p>
           </article>
         ))}
       </div>
