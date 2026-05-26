@@ -6,6 +6,7 @@ import portrait from '../public/images/portrait.png'
 import { GitHub24, MailAt24, GoogleScholar24 } from '../components/icons'
 import PublicationList from '../components/publicationList';
 import NewsSection from 'components/NewsSection'
+import ResearchAreas from '../components/ResearchAreas'
 
 const publicationsData = [
   {
@@ -160,15 +161,17 @@ export default async function Page() {
         </div>
       </div>
 
-      <NewsSection />
+      <ResearchAreas />
 
       <div className="flex items-center mt-16 mb-8 space-x-3">
         <span className="mt-3 mb-2 uppercase tracking-[.2em] text-accent">
-          PUBLICATION
+          SELECTED PUBLICATIONS
         </span>
       </div>
-      
+
       <PublicationList publications={publicationsData} />
+
+      <NewsSection />
 
       <br/><br/><br/><br/>
       
