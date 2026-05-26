@@ -1,0 +1,74 @@
+---
+title: "LLM-Driven Taxonomy Generation"
+year: 2025
+tags:
+  - llm
+thumbnail: /images/projects/llm-taxonomy-generation.jpg
+description: "An LLM pipeline that generates hierarchical, sentiment-aware product-review taxonomies — Wayfair × MIT 15.S04 Generative AI Lab."
+---
+
+## Context
+
+Final project for **MIT 15.S04 Generative AI Lab**, in partnership with
+**Wayfair**. Team: Kaibo Zhang, Mingyang Sun, Yifan Wang, Freya Tan.
+Mentor: Brian Ulicny (MIT). Wayfair sponsors: Carolyn Phillips, Omer Lang.
+
+## Problem
+
+Wayfair organizes huge volumes of unstructured customer feedback into a
+product taxonomy compatible with their internal BRAGI system. Manual
+taxonomy expansion is slow, costly, and hard to scale as new product
+categories arrive — and existing taxonomies struggle to capture
+fine-grained, sentiment-aware aspects like *Style Matching: Positive
+Sentiment* vs *Unstable Design: Negative Sentiment* in the same review.
+
+Project goals:
+
+- Reduce human labeling cost
+- Improve taxonomy efficiency
+- Build a dynamic framework that grows with the data
+
+## Methodology — Hierarchical Taxonomy System (HTS)
+
+A two-part design:
+
+- **Static taxonomy spine** — stable top-level themes (quality/price,
+  size, assembly, color, material, usability, items included)
+- **Dynamic LLM-generated aspects** — leaf labels discovered by the
+  pipeline, each tagged with sentiment
+
+The pipeline runs as an iterative loop with multiple LLMs (gpt-4.1 /
+gpt-4.1-mini) playing different roles:
+
+`sample_batch → extract_aspects_v1 → analyze_taxonomy (FIT / CRITIQUE /
+REVISE) → propose_edits (ADD / SPLIT / MERGE / RENAME / REPARENT) →
+validate_edits (deterministic + LLM stratified validation) → apply_edits
+→ update_stopping → model_selection → save_snapshot`
+
+Each pass scores the current taxonomy against the best snapshot and
+promotes candidate labels to *active* once support thresholds are met.
+
+## Robustness
+
+We stress-tested the taxonomy by removing labels at different support
+levels and measuring how reliably the pipeline recovers them on
+re-ingest:
+
+- Label-tier removal: 0% recovery at Low support, 83% at Medium, 100% at High
+- Theme removal: 100% / 100% / 71% (Low / Medium / High)
+
+High-support concepts are robustly re-derived from the data; very-low
+support labels are correctly not resurrected.
+
+## Dashboard
+
+A Streamlit-based Taxonomy Browser visualizes the L1 → L2 → L3
+hierarchy (sized by support), exposes convergence/validation/trends
+views, and lets reviewers filter by theme.
+
+## Outcomes
+
+- Enhanced feedback-analysis capabilities for the BRAGI taxonomy
+- Improved product understanding through fine-grained, sentiment-aware aspects
+- Significant reduction in human labeling effort while accelerating
+  taxonomy updates
