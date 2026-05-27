@@ -111,16 +111,14 @@ export default async function Page() {
             </h1>
             <br/>
             <div className="font-medium text-fore-subtle">
-              I'm an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">NYU</a>,
-              where I'll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">VIDA Center</a>,
+              I&apos;m an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">NYU</a>,
+              where I&apos;ll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">VIDA Center</a>,
               advised by <a href="https://ctsilva.github.io/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">Prof. Claudio Silva</a> and
               co-advised by <a href="https://www.geosimulation.org/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">Prof. Paul Torrens</a>.
               <br/><br/>
-              I work on <strong>vision-language models and spatial machine learning</strong> to help machines understand cities and the people in them.
+              My research builds <strong>vision-language and spatial machine-learning systems</strong> that help machines understand cities and the people in them. I work on multimodal models that read social interactions from street-view imagery, graph-based representations of mobility and urban form, and LLM-driven reasoning over structured geospatial data.
               <br/><br/>
-              Previously, I completed a dual master's at MIT in EECS (<a href="https://www.csail.mit.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">CSAIL</a>,
-              advised by Prof. Randall Davis) and Urban Planning (<a href="https://cityform.mit.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">City Form Lab</a>,
-              advised by Prof. Andres Sevtsuk).
+              Previously, I spent two years at MIT as a dual-degree master&apos;s student — Electrical Engineering &amp; Computer Science at <a href="https://www.csail.mit.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">CSAIL</a>, advised by <a href="https://web.mit.edu/phillipi/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">Prof. Phillip Isola</a>, and City Planning at the <a href="https://cityform.mit.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">City Form Lab</a>, advised by <a href="https://dusp.mit.edu/people/andres-sevtsuk" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">Prof. Andres Sevtsuk</a>. Earlier, I earned a Master of Urban Design (Urban Science concentration) at UC Berkeley and trained as an architect at Tongji University in Shanghai.
             </div>
           </div>
         </div>
