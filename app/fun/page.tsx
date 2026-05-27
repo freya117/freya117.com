@@ -50,6 +50,7 @@ const interests: Interest[] = [
     title: 'Cooking',
     description:
       'Mostly home-style Chinese, with detours into baking and the occasional fermentation experiment. The kitchen is where I think best after a long stretch of staring at a screen.',
+    image: '/fun/cooking-cover.jpg',
   },
 ]
 
