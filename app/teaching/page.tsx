@@ -31,7 +31,7 @@ const entries: TeachingEntry[] = [
   },
   {
     title: 'Teaching Assistant · MIT Cybersecurity Clinic',
-    role: '11.074 / 11.274 — Supervisors: Lawrence Susskind & Jungwoo Chun',
+    role: '11.074 / 11.274 — Supervisors: Prof. Lawrence Susskind & Prof. Jungwoo Chun',
     period: 'Fall 2025 & Spring 2026',
     image: '/teaching/cybersecurity-clinic.jpg',
     link: 'https://urbancyberdefense.mit.edu/',
@@ -42,7 +42,7 @@ const entries: TeachingEntry[] = [
   },
   {
     title: 'Teaching Assistant · Modeling Pedestrian Activity in Cities',
-    role: 'MIT 11.024 / 11.324 — Supervisor: Andres Sevtsuk',
+    role: 'MIT 11.024 / 11.324 — Supervisor: Prof. Andres Sevtsuk',
     period: 'Spring 2025 · Jan – May 2025',
     image: '/teaching/pedestrian-modeling.jpg',
     link: 'https://mitxonline.mit.edu/courses/course-v1:MITxT+11.024x/',

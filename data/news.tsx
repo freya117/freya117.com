@@ -5,8 +5,6 @@ export type NewsItem = {
   content: ReactNode
 }
 
-// Starter set — Freya to refine wording / add more items.
-// Inspired by the milestones listed in the design spec, Section 4.4.
 export const newsItems: NewsItem[] = [
   {
     date: '05/2026',
@@ -25,20 +23,6 @@ export const newsItems: NewsItem[] = [
           className="font-medium text-accent hover:text-accent-hover hover:underline"
         >
           VIDA Center
-        </a>{' '}
-        with{' '}
-        <a
-          href="https://ctsilva.github.io/"
-          className="font-medium text-accent hover:text-accent-hover hover:underline"
-        >
-          Claudio Silva
-        </a>{' '}
-        and{' '}
-        <a
-          href="https://www.geosimulation.org/"
-          className="font-medium text-accent hover:text-accent-hover hover:underline"
-        >
-          Paul Torrens
         </a>
         .
       </>
@@ -85,8 +69,8 @@ export const newsItems: NewsItem[] = [
         >
           CSAIL
         </a>{' '}
-        as Research Assistant under Randall Davis &amp; Takehiko Nagakura on LLM
-        spatial intelligence (GeoSense-LLM).
+        as Research Assistant under Prof. Randall Davis &amp; Prof. Takehiko
+        Nagakura on LLM spatial intelligence (GeoSense-LLM).
       </>
     ),
   },
@@ -101,7 +85,7 @@ export const newsItems: NewsItem[] = [
         >
           MIT 11.074/274 Cybersecurity Clinic
         </a>{' '}
-        under Lawrence Susskind &amp; Jungwoo Chun.
+        under Prof. Lawrence Susskind &amp; Prof. Jungwoo Chun.
       </>
     ),
   },
@@ -109,21 +93,34 @@ export const newsItems: NewsItem[] = [
     date: '06/2025',
     content: (
       <>
-        - 🌆 Started{' '}
+        - 🌆 Started the{' '}
         <a
           href="https://freedomsummerfellowship.com/"
           className="font-medium text-accent hover:text-accent-hover hover:underline"
         >
           Freedom Summer Fellowship
-        </a>{' '}
-        with the City of Newark Office of Sustainability &amp; Emerald Cities
-        Collaborative.
+        </a>
+        .
       </>
     ),
   },
   {
     date: '05/2025',
-    content: <>- 🎨 Project featured at the Venice Architecture Biennale.</>,
+    content: (
+      <>
+        - 🎨 <em>NYC Walks</em> and <em>Sidewalk Ballet</em>, two projects from
+        MIT's{' '}
+        <a
+          href="https://cityform.mit.edu/projects/venice-architecture-biennale-2025"
+          className="font-medium text-accent hover:text-accent-hover hover:underline"
+        >
+          City Form Lab
+        </a>
+        , on display at the <strong>Venice Architecture Biennale 2025</strong>{' '}
+        — part of the MIT Architecture exhibition <em>The Next Earth</em> at
+        Palazzo Diedo (May 10 – Nov 23, 2025).
+      </>
+    ),
   },
   {
     date: '01/2025',
@@ -136,7 +133,7 @@ export const newsItems: NewsItem[] = [
         >
           MIT 11.024/324 Modeling Pedestrian Activity in Cities
         </a>{' '}
-        under Andres Sevtsuk.
+        under Prof. Andres Sevtsuk.
       </>
     ),
   },

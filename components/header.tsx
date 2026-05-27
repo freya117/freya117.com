@@ -52,13 +52,15 @@ export function Header() {
                 <circle cx="32" cy="32" r="32" fill="#0033A0" />
                 <text
                   x="50%"
-                  y="50%"
-                  dy="0.36em"
+                  y="56%"
+                  dy="0"
                   textAnchor="middle"
-                  fontFamily="ui-sans-serif, system-ui, -apple-system, Inter, sans-serif"
-                  fontWeight={600}
-                  fontSize={36}
+                  fontFamily="Georgia, 'Times New Roman', serif"
+                  fontStyle="italic"
+                  fontWeight={500}
+                  fontSize={42}
                   fill="#ffffff"
+                  dominantBaseline="middle"
                 >
                   F
                 </text>
