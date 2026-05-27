@@ -21,6 +21,16 @@ type Interest = {
 
 const interests: Interest[] = [
   {
+    emoji: '✏️',
+    title: 'STEM education',
+    description:
+      "Designing curricula for kids is one of my favorite puzzles. At Berkeley's Girls in Engineering, I built — and hand-illustrated — a full week of STEM modules across five engineering disciplines, and led the sessions during summer camp.",
+    image: '/fun/girls-in-engineering-roadmap.jpg',
+    href: 'https://girlsinengineering.berkeley.edu/',
+    external: true,
+    cta: 'Berkeley GIE',
+  },
+  {
     emoji: '📷',
     title: 'Photography',
     description:
@@ -34,16 +44,6 @@ const interests: Interest[] = [
     title: 'Climbing',
     description:
       "Bouldering and sport climbing. I'm a USA Climbing Level 1 certified judge — refereeing is a strangely meditative way to spend a weekend at the gym.",
-  },
-  {
-    emoji: '✏️',
-    title: 'STEM education',
-    description:
-      "I love designing curricula and teaching kids — figuring out how to make a hard idea click is its own puzzle. As program assistant at Berkeley's Girls in Engineering, my main work was designing multiple hand-drawn curricula ahead of summer camp — across electrical, environmental, semiconductor, dendrochronology, and civil engineering — and I led several sessions during the camp itself. The roadmap shown here is one of them.",
-    image: '/fun/girls-in-engineering-roadmap.jpg',
-    href: 'https://girlsinengineering.berkeley.edu/',
-    external: true,
-    cta: 'Berkeley GIE',
   },
   {
     emoji: '🍳',
