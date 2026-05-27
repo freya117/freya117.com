@@ -10,12 +10,12 @@ export const newsItems: NewsItem[] = [
     date: '05/2026',
     content: (
       <>
-        - 🎓 Accepted to{' '}
+        - 🎓 Accepted to the PhD program at the{' '}
         <a
           href="https://cs.nyu.edu/"
           className="font-medium text-accent hover:text-accent-hover hover:underline"
         >
-          NYU CS PhD
+          NYU Computer Science Department
         </a>
         ; will join the{' '}
         <a
