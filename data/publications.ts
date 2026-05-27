@@ -101,18 +101,6 @@ export const publications: Publication[] = [
     venue: 'ACSP 65th Annual Conference',
     year: 2025,
     image: '/images/publication/seeing-hai.jpg',
-    projectLink: '/projects/sidewalk-ballet',
-    status: 'published',
-  },
-  {
-    title:
-      'Chapter 4: Reimagining Education, Rewinding Valley: A New Knowledge-Production Vision for Salinas Valley',
-    authors: ['Freya Tan', 'M. Yu', 'Y. Gogri'],
-    venue:
-      'Designing the Rural: Urban Design in Rural California, UC Berkeley',
-    year: 2023,
-    image: '/images/publication/salinas-valley.jpg',
-    projectLink: '/projects/reimagining-salinas-valley',
     status: 'published',
   },
 ]
