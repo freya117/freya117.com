@@ -39,8 +39,7 @@ const interests: Interest[] = [
     title: 'Girls in Engineering @ UC Berkeley',
     description:
       "Program assistant at Berkeley's Girls in Engineering summer camp. Designed week-long STEM curricula and led camp sessions across electrical engineering, environmental engineering, semiconductor manufacturing, dendrochronology, and civil engineering — including the hand-drawn roadmap shown here.",
-    // Drop the roadmap JPG into public/fun/ and uncomment:
-    // image: '/fun/girls-in-engineering-roadmap.jpg',
+    image: '/fun/girls-in-engineering-roadmap.jpg',
     href: 'https://girlsinengineering.berkeley.edu/',
     external: true,
     cta: 'Program site',
@@ -50,49 +49,6 @@ const interests: Interest[] = [
     title: 'Cooking',
     description:
       'Mostly home-style Chinese, with detours into baking and the occasional fermentation experiment. The kitchen is where I think best after a long stretch of staring at a screen.',
-  },
-]
-
-// fu-zhe.com/fun-style: emoji-headed sections with short bullets.
-// Conversational tone, personal voice.
-type FactSection = {
-  emoji: string
-  title: string
-  facts: string[]
-}
-
-const factSections: FactSection[] = [
-  {
-    emoji: '🎓',
-    title: 'A bit of provenance',
-    facts: [
-      'Three degrees, three campuses: Tongji → UC Berkeley → MIT — and counting NYU.',
-      'I switched from urban design to computer science because I kept wanting to *write the tool*, not just use it.',
-    ],
-  },
-  {
-    emoji: '🏙',
-    title: 'How I think',
-    facts: [
-      'I think of cities the way some people think of cathedrals — every block has structure, sediment, and surprises.',
-      "I keep a running list of streets I'd like to walk next time I'm in town somewhere.",
-    ],
-  },
-  {
-    emoji: '🎶',
-    title: 'Working soundtrack',
-    facts: [
-      'Instrumental film scores when I need to focus, rainstorms when I really need to focus.',
-      'Live-music binge: jazz clubs and indie venues whenever a new city lets me.',
-    ],
-  },
-  {
-    emoji: '📖',
-    title: 'Small habits',
-    facts: [
-      'I read on paper, take notes in Pages, and refuse to give either up.',
-      "I'll go a long way for a good cup of tea.",
-    ],
   },
 ]
 
@@ -222,29 +178,6 @@ export default function FunPage() {
         {interests.map((it) => (
           <InterestCard key={it.title} it={it} />
         ))}
-      </section>
-
-      <section className="mb-16">
-        <h2 className="uppercase tracking-[.2em] text-accent text-sm font-semibold mb-8">
-          Fun facts
-        </h2>
-        <div className="space-y-8 max-w-2xl">
-          {factSections.map((s) => (
-            <div key={s.title}>
-              <h3 className="text-sm font-semibold text-fore-primary mb-2">
-                <span className="mr-1.5" aria-hidden="true">
-                  {s.emoji}
-                </span>
-                {s.title}
-              </h3>
-              <ul className="space-y-2 text-sm text-fore-secondary list-disc pl-5 leading-relaxed">
-                {s.facts.map((f, i) => (
-                  <li key={i}>{f}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
       </section>
 
       <br />
