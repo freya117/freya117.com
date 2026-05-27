@@ -39,7 +39,7 @@ const interests: Interest[] = [
     emoji: '✏️',
     title: 'STEM education',
     description:
-      "I love designing curricula and teaching kids — figuring out how to make a hard idea click is its own puzzle. Most recent stint: program assistant at Berkeley's Girls in Engineering summer camp, where I designed and led a week of hands-on sessions across electrical, environmental, semiconductor, dendrochronology, and civil engineering — the hand-drawn roadmap shown here.",
+      "I love designing curricula and teaching kids — figuring out how to make a hard idea click is its own puzzle. As program assistant at Berkeley's Girls in Engineering, my main work was designing multiple hand-drawn curricula ahead of summer camp — across electrical, environmental, semiconductor, dendrochronology, and civil engineering — and I led several sessions during the camp itself. The roadmap shown here is one of them.",
     image: '/fun/girls-in-engineering-roadmap.jpg',
     href: 'https://girlsinengineering.berkeley.edu/',
     external: true,
