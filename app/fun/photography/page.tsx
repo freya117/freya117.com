@@ -12,32 +12,78 @@ export const metadata: Metadata = {
 type Album = {
   slug: string
   title: string
-  year?: string
+  date?: string
   location?: string
   description?: string
-  cover?: string // path under /public; soft-tinted block as fallback
-  photos?: string[] // future: gallery grid
+  photos: string[] // public-path images, displayed in order in a 3-col grid
 }
 
-// Drop new albums in here as you collect photos.
-// Cover-only treatment for now; eventually each album can route to its own
-// page with a full grid (app/fun/photography/[slug]/page.tsx).
+// Drop new albums at the top of this array.
+// Each album shows as: title + meta + 3-col grid of photos.
 const albums: Album[] = [
-  // Example shape:
-  // {
-  //   slug: 'venice-2025',
-  //   title: 'Venice, 2025',
-  //   year: '2025',
-  //   location: 'Venice, Italy',
-  //   description: 'Walks around the Biennale week — water, scaffolding, low light.',
-  //   cover: '/fun/photography/venice-2025/cover.jpg',
-  // },
+  {
+    slug: 'arizona-road-trip',
+    title: 'Arizona Road Trip',
+    date: 'January 2025',
+    location: 'Bryce · Canyonlands · Monument Valley · Antelope Canyon',
+    description:
+      'A winter loop out of Las Vegas through the Southwest — hoodoos at sunrise, Mesa Arch at first light, sandstone slot canyons.',
+    photos: [
+      '/fun/photography/arizona-road-trip/01.jpg',
+      '/fun/photography/arizona-road-trip/02.jpg',
+      '/fun/photography/arizona-road-trip/03.jpg',
+      '/fun/photography/arizona-road-trip/04.jpg',
+      '/fun/photography/arizona-road-trip/05.jpg',
+      '/fun/photography/arizona-road-trip/06.jpg',
+      '/fun/photography/arizona-road-trip/07.jpg',
+      '/fun/photography/arizona-road-trip/08.jpg',
+      '/fun/photography/arizona-road-trip/09.jpg',
+    ],
+  },
 ]
+
+function AlbumSection({ album }: { album: Album }) {
+  return (
+    <section className="mb-20">
+      <header className="mb-6">
+        <h2 className="text-lg font-semibold text-fore-primary">
+          {album.title}
+        </h2>
+        {(album.date || album.location) && (
+          <p className="text-xs text-fore-subtle mt-0.5">
+            {[album.date, album.location].filter(Boolean).join(' · ')}
+          </p>
+        )}
+        {album.description && (
+          <p className="text-sm text-fore-secondary mt-3 leading-relaxed max-w-2xl">
+            {album.description}
+          </p>
+        )}
+      </header>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-3">
+        {album.photos.map((src, i) => (
+          <div
+            key={src}
+            className="relative aspect-square overflow-hidden rounded bg-back-subtle"
+          >
+            <Image
+              src={src}
+              alt={`${album.title} — ${i + 1}`}
+              fill
+              className="object-cover hover:scale-[1.02] transition-transform duration-300"
+              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 320px"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
 
 export default function PhotographyPage() {
   return (
     <Fragment>
-      <header className="mb-10">
+      <header className="mb-12">
         <p className="text-xs text-fore-subtle mb-2">
           <Link
             href="/fun"
@@ -48,9 +94,9 @@ export default function PhotographyPage() {
         </p>
         <h1 className="mt-3 mb-3 text-2xl font-bold text-accent">Photography</h1>
         <p className="text-fore-secondary leading-relaxed max-w-2xl text-sm">
-          Albums collected over the years — mostly street, architectural, and
-          travel work. I&apos;m slowly editing these into proper photo books.
-          More series will land here as I sort through the archive.
+          Albums of nine — each grid is one trip or theme. Slowly editing
+          these into proper photo books; more series coming as I sort
+          through the archive.
         </p>
       </header>
 
@@ -64,42 +110,11 @@ export default function PhotographyPage() {
           </p>
         </section>
       ) : (
-        <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {albums.map((a) => (
-            <article key={a.slug} className="group">
-              <div className="aspect-[4/3] relative rounded overflow-hidden bg-back-subtle mb-3">
-                {a.cover ? (
-                  <Image
-                    src={a.cover}
-                    alt={a.title}
-                    fill
-                    className="object-cover transition-opacity group-hover:opacity-90"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                ) : (
-                  <div className="absolute inset-0 flex items-center justify-center bg-back-accent">
-                    <span className="text-4xl select-none" aria-hidden="true">
-                      📷
-                    </span>
-                  </div>
-                )}
-              </div>
-              <h2 className="text-base font-semibold text-fore-primary">
-                {a.title}
-              </h2>
-              {(a.year || a.location) && (
-                <p className="text-xs text-fore-subtle mt-0.5">
-                  {[a.location, a.year].filter(Boolean).join(' · ')}
-                </p>
-              )}
-              {a.description && (
-                <p className="text-sm text-fore-secondary mt-2 leading-relaxed">
-                  {a.description}
-                </p>
-              )}
-            </article>
+        <div>
+          {albums.map((album) => (
+            <AlbumSection key={album.slug} album={album} />
           ))}
-        </section>
+        </div>
       )}
 
       <br />
