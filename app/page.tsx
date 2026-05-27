@@ -111,7 +111,7 @@ export default async function Page() {
             </h1>
             <br/>
             <div className="font-medium text-fore-subtle">
-              I&apos;m an incoming CS PhD at <a href="https://cs.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">NYU</a>,
+              I&apos;m an incoming CS PhD at the <a href="https://cs.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">NYU Computer Science Department</a>,
               where I&apos;ll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">VIDA Center</a>,
               advised by <a href="https://ctsilva.github.io/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">Prof. Claudio Silva</a> and
               co-advised by <a href="https://www.geosimulation.org/" className="font-medium text-accent underline decoration-accent/40 underline-offset-2 hover:text-accent-hover hover:decoration-accent">Prof. Paul Torrens</a>.
