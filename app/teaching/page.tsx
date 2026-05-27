@@ -31,7 +31,7 @@ const entries: TeachingEntry[] = [
   },
   {
     title: 'Teaching Assistant · MIT Cybersecurity Clinic',
-    role: '11.074 / 11.274 — Supervisors: Prof. Lawrence Susskind & Prof. Jungwoo Chun',
+    role: '11.074 / 11.274 — Supervisors: Prof. Lawrence Susskind & Dr. Jungwoo Chun',
     period: 'Fall 2025 & Spring 2026',
     image: '/teaching/cybersecurity-clinic.jpg',
     link: 'https://urbancyberdefense.mit.edu/',
