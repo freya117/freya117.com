@@ -1,9 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import logo from '../public/images/logo.png'
 import { NavLink } from './atoms'
 import { ThemeToggle } from './themeToggle'
 
@@ -41,21 +39,31 @@ export function Header() {
           className="flex items-center border-white group "
         >
           <div>
-            <div className="overflow-hidden top-2 transition-transform ease-in-out border-2 rounded-full w-9 h-9 group-hover:-translate-y-1">
-              <Image
-                src={logo}
-                alt="LOGO"
-                width={36}
-                height={36}
-                priority={true}
-              />
+            <div className="overflow-hidden transition-transform ease-in-out rounded-full w-9 h-9 group-hover:-translate-y-1">
+              {/* Placeholder logo — same MIT-blue F mark as favicon, circular variant.
+                  Replace with custom logo when designed. */}
+              <svg
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Freya Tan — home"
+                className="w-9 h-9"
+              >
+                <circle cx="32" cy="32" r="32" fill="#0033A0" />
+                <text
+                  x="50%"
+                  y="50%"
+                  dy="0.36em"
+                  textAnchor="middle"
+                  fontFamily="ui-sans-serif, system-ui, -apple-system, Inter, sans-serif"
+                  fontWeight={600}
+                  fontSize={36}
+                  fill="#ffffff"
+                >
+                  F
+                </text>
+              </svg>
             </div>
-            {/* <div className="inline ml-3 text-base font-semibold sm:hidden">
-              <span className="group-hover:text-accent text-fore-subtle">
-                chaoranchen
-              </span>
-              <span className="text-accent">.com</span>
-            </div> */}
           </div>
         </Link>
         <div className="items-center flex-grow hidden space-x-6 sm:flex">
