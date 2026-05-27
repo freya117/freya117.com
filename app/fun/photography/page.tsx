@@ -18,28 +18,9 @@ type Album = {
   photos: string[] // public-path images, displayed in order in a 3-col grid
 }
 
-// Drop new albums at the top of this array.
-// Each album shows as: title + meta + 3-col grid of photos.
+// Albums in reverse-chronological order (most recent trip first).
+// Add new albums at the top of this array.
 const albums: Album[] = [
-  {
-    slug: 'yellowstone',
-    title: 'Yellowstone',
-    date: 'August 2024',
-    location: 'Yellowstone National Park, WY',
-    description:
-      'Summer in geyser country — steam plumes at sunrise, bison crossings, and the Lamar Valley at golden hour.',
-    photos: [
-      '/fun/photography/yellowstone/01.jpg',
-      '/fun/photography/yellowstone/02.jpg',
-      '/fun/photography/yellowstone/03.jpg',
-      '/fun/photography/yellowstone/04.jpg',
-      '/fun/photography/yellowstone/05.jpg',
-      '/fun/photography/yellowstone/06.jpg',
-      '/fun/photography/yellowstone/07.jpg',
-      '/fun/photography/yellowstone/08.jpg',
-      '/fun/photography/yellowstone/09.jpg',
-    ],
-  },
   {
     slug: 'arizona-road-trip',
     title: 'Arizona Road Trip',
@@ -57,6 +38,25 @@ const albums: Album[] = [
       '/fun/photography/arizona-road-trip/07.jpg',
       '/fun/photography/arizona-road-trip/08.jpg',
       '/fun/photography/arizona-road-trip/09.jpg',
+    ],
+  },
+  {
+    slug: 'yellowstone',
+    title: 'Yellowstone',
+    date: 'August 2024',
+    location: 'Yellowstone National Park, WY',
+    description:
+      'Summer in geyser country — steam plumes at sunrise, bison crossings, and the Lamar Valley at golden hour.',
+    photos: [
+      '/fun/photography/yellowstone/01.jpg',
+      '/fun/photography/yellowstone/02.jpg',
+      '/fun/photography/yellowstone/03.jpg',
+      '/fun/photography/yellowstone/04.jpg',
+      '/fun/photography/yellowstone/05.jpg',
+      '/fun/photography/yellowstone/06.jpg',
+      '/fun/photography/yellowstone/07.jpg',
+      '/fun/photography/yellowstone/08.jpg',
+      '/fun/photography/yellowstone/09.jpg',
     ],
   },
 ]
