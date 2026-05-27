@@ -9,7 +9,7 @@ import { ThemeToggle } from './themeToggle'
 const routes = [
   {
     path: '/',
-    label: 'Home',
+    label: 'About',
     exact: true,
   },
   {
@@ -17,12 +17,16 @@ const routes = [
     label: 'Publications',
   },
   {
-    path: '/cv',
-    label: 'CV',
+    path: '/projects',
+    label: 'Projects',
   },
   {
-    path: '/contact',
-    label: 'Contact',
+    path: '/teaching',
+    label: 'Teaching',
+  },
+  {
+    path: '/fun',
+    label: 'Fun',
   },
 ]
 

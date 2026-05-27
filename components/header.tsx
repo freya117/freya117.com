@@ -23,6 +23,10 @@ const routes = [
     path: '/teaching',
     label: 'Teaching',
   },
+  {
+    path: '/fun',
+    label: 'Fun',
+  },
 ]
 
 export function Header() {
