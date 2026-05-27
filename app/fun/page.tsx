@@ -25,6 +25,7 @@ const interests: Interest[] = [
     title: 'Photography',
     description:
       'Mostly street and architectural — moments when the geometry of a place catches a passing figure just right. Slowly building it into a few small albums.',
+    image: '/fun/photography-cover.jpg',
     href: '/fun/photography',
     cta: 'See the albums',
   },
