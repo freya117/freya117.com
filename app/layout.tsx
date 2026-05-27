@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Fira_Code, Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { Analytics } from '../components/analytics'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
@@ -10,12 +10,6 @@ import './styles/globals.css'
 const FontInter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
-})
-
-const FontFiraCode = Fira_Code({
-  subsets: ['latin'],
-  variable: '--font-fira-code',
   display: 'swap',
 })
 
@@ -66,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="light" suppressHydrationWarning>
       <body
-        className={`${FontInter.variable} ${FontFiraCode.variable} font-sans flex flex-col min-h-screen relative`}
+        className={`${FontInter.variable} font-sans flex flex-col min-h-screen relative`}
       >
         <MobileNav />
         <Header />

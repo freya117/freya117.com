@@ -31,7 +31,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
-        mono: ['var(--font-fira-code)', ...fontFamily.mono],
+        // mono kept on system font stack — Fira Code removed (was unused,
+        // and its Google Fonts fetch is the main flake point in Vercel builds)
+        mono: [...fontFamily.mono],
       },
       animation: {
         'blob-spin': 'blobbing 25s linear infinite',
