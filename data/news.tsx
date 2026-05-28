@@ -44,7 +44,7 @@ export const newsItems: NewsItem[] = [
     ),
   },
   {
-    date: '01/2026',
+    date: '12/2025',
     content: (
       <>
         - 📃 Our paper{' '}
