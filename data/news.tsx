@@ -29,6 +29,21 @@ export const newsItems: NewsItem[] = [
     ),
   },
   {
+    date: '04/2026',
+    content: (
+      <>
+        - 📃 Our paper{' '}
+        <a
+          href="https://www.sciencedirect.com/science/article/pii/S0378778826005645"
+          className="font-medium text-accent hover:text-accent-hover hover:underline"
+        >
+          Automated urban archetypes
+        </a>{' '}
+        published in <strong>Energy &amp; Buildings</strong>.
+      </>
+    ),
+  },
+  {
     date: '01/2026',
     content: (
       <>
@@ -40,21 +55,6 @@ export const newsItems: NewsItem[] = [
           MINGLE
         </a>{' '}
         accepted to <strong>AAAI 2026</strong>.
-      </>
-    ),
-  },
-  {
-    date: '01/2026',
-    content: (
-      <>
-        - 📃 Our paper{' '}
-        <a
-          href="https://www.sciencedirect.com/science/article/pii/S0378778826005645"
-          className="font-medium text-accent hover:text-accent-hover hover:underline"
-        >
-          Automated urban archetypes
-        </a>{' '}
-        published in <strong>Energy &amp; Buildings</strong>.
       </>
     ),
   },
