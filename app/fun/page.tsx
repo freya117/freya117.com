@@ -44,6 +44,7 @@ const interests: Interest[] = [
     title: 'Climbing',
     description:
       "Bouldering and sport climbing. I'm a USA Climbing Level 1 certified judge — refereeing is a strangely meditative way to spend a weekend at the gym.",
+    image: '/fun/climbing-cover.jpg',
   },
   {
     emoji: '🍳',
