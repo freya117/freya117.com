@@ -85,7 +85,14 @@ export const newsItems: NewsItem[] = [
         >
           MIT 11.074/274 Cybersecurity Clinic
         </a>{' '}
-        under Prof. Lawrence Susskind &amp; Dr. Jungwoo Chun.
+        under{' '}
+        <a
+          href="https://dusp.mit.edu/people/lawrence-susskind"
+          className="font-medium text-accent hover:text-accent-hover hover:underline"
+        >
+          Prof. Lawrence Susskind
+        </a>{' '}
+        &amp; Dr. Jungwoo Chun.
       </>
     ),
   },
