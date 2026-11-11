@@ -43,8 +43,8 @@ export default async function Page() {
           <div className="flex flex-row items-center justify-center space-x-6 pointer-events-auto">
               <span>
                 <a
-                  href="mailto:freya117@mit.edu"
-                  aria-label="Email freya117@mit.edu"
+                  href="mailto:ht2671@nyu.edu"
+                  aria-label="Email ht2671@nyu.edu"
                   title="Email"
                   className="focus:text-accent"
                 >
@@ -111,8 +111,8 @@ export default async function Page() {
             </h1>
             <br/>
             <div className="font-medium text-fore-subtle">
-              I&apos;m an incoming CS PhD at the <a href="https://cs.nyu.edu/" className="font-medium text-accent underline-offset-2 decoration-accent hover:text-accent-hover hover:underline">NYU Computer Science Department</a>,
-              where I&apos;ll join the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent underline-offset-2 decoration-accent hover:text-accent-hover hover:underline">VIDA Center</a>,
+              I&apos;m a first-year CS PhD student in the <a href="https://cs.nyu.edu/" className="font-medium text-accent underline-offset-2 decoration-accent hover:text-accent-hover hover:underline">NYU Computer Science Department</a>,
+              working in the <a href="https://vida.engineering.nyu.edu/" className="font-medium text-accent underline-offset-2 decoration-accent hover:text-accent-hover hover:underline">VIDA Center</a>,
               advised by <a href="https://ctsilva.github.io/" className="font-medium text-accent underline-offset-2 decoration-accent hover:text-accent-hover hover:underline">Prof. Claudio Silva</a> and
               co-advised by <a href="https://www.geosimulation.org/" className="font-medium text-accent underline-offset-2 decoration-accent hover:text-accent-hover hover:underline">Prof. Paul Torrens</a>.
               <br/><br/>

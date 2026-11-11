@@ -28,8 +28,8 @@ export function Footer() {
 
           <div className="flex flex-row items-center space-x-5 text-fore-subtle">
             <a
-              href="mailto:freya117@mit.edu"
-              aria-label="Email freya117@mit.edu"
+              href="mailto:ht2671@nyu.edu"
+              aria-label="Email ht2671@nyu.edu"
               title="Email"
               className="hover:text-accent transition-colors"
             >

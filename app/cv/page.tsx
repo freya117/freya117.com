@@ -12,12 +12,10 @@ export default function CVPage() {
           Curriculum Vitae
         </h1>
         <p className="text-fore-subtle text-sm">
-          Freya Tan · freya117@mit.edu
+          Freya Tan · ht2671@nyu.edu
         </p>
         <p className="text-xs text-fore-subtle italic mt-2">
-          A detailed web CV is being prepared for Stage 5 of the site rebuild.
-          In the meantime, the highlights below + the resources at the bottom
-          should cover most questions.
+          A full CV is available on request.
         </p>
       </header>
 
@@ -27,8 +25,8 @@ export default function CVPage() {
         </h2>
         <ul className="space-y-2 text-fore-secondary">
           <li>
-            <strong className="text-fore-primary">Incoming CS PhD</strong> ·
-            New York University, VIDA Center · advised by Claudio Silva and Paul Torrens · 2026 –
+            <strong className="text-fore-primary">Ph.D. in Computer Science</strong> (first year) ·
+            New York University, VIDA Center · advised by Prof. Claudio Silva and Prof. Paul Torrens · 2026 – present
           </li>
           <li>
             <strong className="text-fore-primary">Dual M.S.</strong> · MIT — EECS (CSAIL) and
@@ -71,8 +69,7 @@ export default function CVPage() {
               className="text-accent hover:text-accent-hover hover:underline"
             >
               /teaching
-            </a>{' '}
-            <span className="text-xs text-fore-subtle">(coming in Stage 5)</span>
+            </a>
           </li>
           <li>
             Google Scholar:{' '}

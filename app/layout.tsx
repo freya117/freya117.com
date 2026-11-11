@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: '%s | Freya Tan',
   },
   description:
-    'Freya Tan — incoming CS PhD at NYU (VIDA Center). Spatial AI, vision-language models, and machine learning for understanding cities and the people in them.',
+    'Freya Tan — first-year CS PhD at NYU (VIDA Center). Spatial AI, vision-language models, and machine learning for understanding cities and the people in them.',
   openGraph: {
     title: 'Freya Tan',
     description:

@@ -7,17 +7,17 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
-    date: '05/2026',
+    date: '09/2026',
     content: (
       <>
-        - 🎓 Accepted to the PhD program at the{' '}
+        - 🎓 Started my PhD at the{' '}
         <a
           href="https://cs.nyu.edu/"
           className="font-medium text-accent hover:text-accent-hover hover:underline"
         >
           NYU Computer Science Department
         </a>
-        ; will join the{' '}
+        , joining the{' '}
         <a
           href="https://vida.engineering.nyu.edu/"
           className="font-medium text-accent hover:text-accent-hover hover:underline"
@@ -25,6 +25,14 @@ export const newsItems: NewsItem[] = [
           VIDA Center
         </a>
         .
+      </>
+    ),
+  },
+  {
+    date: '05/2026',
+    content: (
+      <>
+        - 📬 Accepted to the PhD program at the NYU Computer Science Department.
       </>
     ),
   },
