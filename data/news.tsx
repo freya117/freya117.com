@@ -29,14 +29,6 @@ export const newsItems: NewsItem[] = [
     ),
   },
   {
-    date: '05/2026',
-    content: (
-      <>
-        - 📬 Accepted to the PhD program at the NYU Computer Science Department.
-      </>
-    ),
-  },
-  {
     date: '04/2026',
     content: (
       <>
