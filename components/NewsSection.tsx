@@ -17,8 +17,8 @@ export default function NewsSection() {
 
       <ul className="flex-col space-y-4">
         {displayed.map((item, index) => (
-          <li key={index}>
-            <strong>{item.date}</strong>
+          <li key={index} className="text-fore-secondary">
+            <strong className="text-fore-primary">{item.date}</strong>
             <br />
             {item.content}
           </li>
