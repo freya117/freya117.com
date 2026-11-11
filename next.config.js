@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Next 16 only serves image qualities listed here (default [75]).
+  // Portrait on the homepage uses quality={85}.
+  images: { qualities: [75, 85] },
   async redirects() {
     return [
       // Old Jekyll URLs → new IA

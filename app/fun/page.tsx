@@ -78,34 +78,40 @@ function InterestImage({ it }: { it: Interest }) {
   )
 }
 
-function InterestCard({ it }: { it: Interest }) {
-  const Wrapper = ({ children }: { children: React.ReactNode }) => {
-    if (!it.href) return <>{children}</>
-    if (it.external) {
-      return (
-        <a
-          href={it.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block transition-opacity hover:opacity-90"
-        >
-          {children}
-        </a>
-      )
-    }
+function InterestLink({
+  it,
+  children,
+}: {
+  it: Interest
+  children: React.ReactNode
+}) {
+  if (!it.href) return <>{children}</>
+  if (it.external) {
     return (
-      <Link href={it.href} className="block transition-opacity hover:opacity-90">
+      <a
+        href={it.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block transition-opacity hover:opacity-90"
+      >
         {children}
-      </Link>
+      </a>
     )
   }
+  return (
+    <Link href={it.href} className="block transition-opacity hover:opacity-90">
+      {children}
+    </Link>
+  )
+}
 
+function InterestCard({ it }: { it: Interest }) {
   return (
     <article className="grid md:grid-cols-[160px_1fr] gap-5 md:gap-6">
       {it.href ? (
-        <Wrapper>
+        <InterestLink it={it}>
           <InterestImage it={it} />
-        </Wrapper>
+        </InterestLink>
       ) : (
         <InterestImage it={it} />
       )}

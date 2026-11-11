@@ -117,7 +117,7 @@ export const newsItems: NewsItem[] = [
     content: (
       <>
         - 🎨 <em>NYC Walks</em> and <em>Sidewalk Ballet</em>, two projects from
-        MIT's{' '}
+        MIT&apos;s{' '}
         <a
           href="https://cityform.mit.edu/projects/venice-architecture-biennale-2025"
           className="font-medium text-accent hover:text-accent-hover hover:underline"

@@ -107,7 +107,7 @@ export default async function Page() {
           <div>
             <h1 className="text-4xl font-semibold">
               <br/>
-              Hi, I'm Freya Tan
+              Hi, I&apos;m Freya Tan
             </h1>
             <br/>
             <div className="font-medium text-fore-subtle">

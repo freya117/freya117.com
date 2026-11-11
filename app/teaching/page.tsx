@@ -61,7 +61,7 @@ export default function TeachingPage() {
         <h1 className="mt-3 mb-3 text-2xl font-bold text-accent">Teaching</h1>
         <p className="text-fore-secondary leading-relaxed max-w-2xl text-sm">
           Course assistantships, teaching-development training, and
-          instructional materials I've contributed to at MIT.
+          instructional materials I&apos;ve contributed to at MIT.
         </p>
       </header>
 
